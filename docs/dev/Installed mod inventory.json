@@ -1,0 +1,256 @@
+{
+  "FMRS/FMRS.version": {
+    "name": "FMRS (Flight Manager For Reusable Stages)",
+    "version": {
+      "MAJOR": 1,
+      "MINOR": 2,
+      "PATCH": 9,
+      "BUILD": 6
+    }
+  },
+  "000_ClickThroughBlocker/ClickThroughBlocker.version": {
+    "name": "ClickThroughBlocker",
+    "version": {
+      "MAJOR": 2,
+      "MINOR": 1,
+      "PATCH": 10,
+      "BUILD": 23
+    }
+  },
+  "SystemHeat/Versioning/SystemHeat.version": {
+    "name": "SystemHeat",
+    "version": {
+      "MAJOR": 0,
+      "MINOR": 7,
+      "PATCH": 5,
+      "BUILD": 0
+    }
+  },
+  "KSPCommunityFixes/KSPCommunityFixes.version": {
+    "name": "KSPCommunityFixes",
+    "version": {
+      "MAJOR": 1,
+      "MINOR": 40,
+      "PATCH": 1,
+      "BUILD": 0
+    }
+  },
+  "DynamicBatteryStorage/Versioning/DynamicBatteryStorage.version": {
+    "name": "DynamicBatteryStorage",
+    "version": {
+      "MAJOR": 2,
+      "MINOR": 3,
+      "PATCH": 3,
+      "BUILD": 0
+    }
+  },
+  "DistantObject/DistantObject.version": {
+    "name": "Distant Object Enhancement (DOE) /L",
+    "version": {
+      "MAJOR": 2,
+      "MINOR": 2,
+      "PATCH": 1,
+      "BUILD": 7
+    }
+  },
+  "StarshipExpansionProject/Versioning/StarshipExpansionProject.version": {
+    "name": "Starship Expansion Project",
+    "version": {
+      "MAJOR": 3,
+      "MINOR": 1,
+      "PATCH": 0,
+      "BUILD": 0
+    }
+  },
+  "Waterfall/Versioning/Waterfall.version": {
+    "name": "Waterfall",
+    "version": {
+      "MAJOR": 0,
+      "MINOR": 10,
+      "PATCH": 3,
+      "BUILD": 0
+    }
+  },
+  "001_ToolbarControl/ToolbarControl.version": {
+    "name": "ToolbarControl",
+    "version": {
+      "MAJOR": 0,
+      "MINOR": 1,
+      "PATCH": 9,
+      "BUILD": 14
+    }
+  },
+  "KerbalEngineer/KerbalEngineer.version": {
+    "name": "Kerbal Engineer Redux",
+    "version": {
+      "MAJOR": 1,
+      "MINOR": 1,
+      "PATCH": 9,
+      "BUILD": 5
+    }
+  },
+  "StationPartsExpansionRedux/Versioning/StationPartsExpansionRedux.version": {
+    "name": "StationPartsExpansionRedux",
+    "version": {
+      "MAJOR": 2,
+      "MINOR": 0,
+      "PATCH": 11,
+      "BUILD": 0
+    }
+  },
+  "StarshipLaunchExpansion/Versioning/StarshipLaunchExpansion.version": {
+    "name": "StarshipLaunchExpansion",
+    "version": {
+      "MAJOR": 0,
+      "MINOR": 5,
+      "PATCH": 0,
+      "BUILD": 0
+    }
+  },
+  "SpaceTuxLibrary/ButtonManager.version": {
+    "name": "ButtonManager",
+    "version": {
+      "MAJOR": 1,
+      "MINOR": 0,
+      "PATCH": 2,
+      "BUILD": 0
+    }
+  },
+  "SpaceTuxLibrary/SpaceTuxLibrary.version": {
+    "name": "SpaceTuxLibrary",
+    "version": {
+      "MAJOR": 0,
+      "MINOR": 0,
+      "PATCH": 9,
+      "BUILD": 0
+    }
+  },
+  "PlanetShine/Plugins/PlanetShine.version": {
+    "name": "PlanetShine",
+    "version": {
+      "MAJOR": 0,
+      "MINOR": 2,
+      "PATCH": 6,
+      "BUILD": 3
+    }
+  },
+  "RecoveryController/RecoveryController.version": {
+    "name": "Recovery Controller",
+    "version": {
+      "MAJOR": 0,
+      "MINOR": 0,
+      "PATCH": 4,
+      "BUILD": 3
+    }
+  },
+  "SpaceDust/Versioning/SpaceDust.version": {
+    "name": "SpaceDust",
+    "version": {
+      "MAJOR": 0,
+      "MINOR": 5,
+      "PATCH": 4,
+      "BUILD": 0
+    }
+  },
+  "VesselMover/VesselMover.version": {
+    "name": "VesselMover",
+    "version": {
+      "MAJOR": 1,
+      "MINOR": 12,
+      "PATCH": 0,
+      "BUILD": 0
+    }
+  },
+  "B9PartSwitch/B9PartSwitch.version": {
+    "name": "B9 Part Switch",
+    "version": "2.20.0"
+  },
+  "Shabby/Shabby.version": {
+    "name": "Shabby",
+    "version": "0.4.2.0"
+  },
+  "KerbalJointReinforcement/KerbalJointReinforcement.version": {
+    "name": "Kerbal Joint Reinforcement",
+    "version": {
+      "MAJOR": 4,
+      "MINOR": 2,
+      "PATCH": 28
+    }
+  },
+  "CryoTanks/Versioning/CryoTanks.version": {
+    "name": "CryoTanks",
+    "version": {
+      "MAJOR": 1,
+      "MINOR": 6,
+      "PATCH": 6,
+      "BUILD": 0
+    }
+  },
+  "NearFutureProps/Versioning/NearFutureProps.version": {
+    "name": "NearFutureProps",
+    "version": {
+      "MAJOR": 0,
+      "MINOR": 7,
+      "PATCH": 2,
+      "BUILD": 0
+    }
+  },
+  "CommunityResourcePack/CRP.version": {
+    "name": "Community Resource Pack",
+    "version": {
+      "MAJOR": 1,
+      "MINOR": 4,
+      "PATCH": 2,
+      "BUILD": 0
+    }
+  },
+  "FarFutureTechnologies/Versioning/FarFutureTechnologies.version": {
+    "name": "FarFutureTechnologies",
+    "version": {
+      "MAJOR": 1,
+      "MINOR": 4,
+      "PATCH": 2,
+      "BUILD": 0
+    }
+  },
+  "BoosterGuidance/BoosterGuidance.version": {
+    "name": "BoosterGuidance",
+    "version": {
+      "MAJOR": 1,
+      "MINOR": 2,
+      "PATCH": 0,
+      "BUILD": 1
+    }
+  },
+  "Trajectories/Trajectories.version": {
+    "name": "Trajectories",
+    "version": {
+      "MAJOR": 2,
+      "MINOR": 4,
+      "PATCH": 3,
+      "BUILD": 0
+    }
+  },
+  "000_Harmony/Harmony.version": {
+    "name": "Harmony",
+    "version": {
+      "MAJOR": 2,
+      "MINOR": 2,
+      "PATCH": 1,
+      "BUILD": 0
+    }
+  },
+  "DeployableEngines/Versioning/DeployableEngines.version": {
+    "name": "DeployableEngines",
+    "version": {
+      "MAJOR": 1,
+      "MINOR": 3,
+      "PATCH": 1,
+      "BUILD": 0
+    }
+  },
+  "kOS/kOS.version": {
+    "name": "kOS",
+    "version": "1.6.0.1"
+  }
+}

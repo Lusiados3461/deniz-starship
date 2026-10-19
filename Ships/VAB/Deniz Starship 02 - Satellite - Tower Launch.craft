@@ -1,0 +1,4233 @@
+ship = D Starship 2 Sat
+version = 1.12.5
+description = Satellite mission. Permanent two-seat flight cabin. Keys 1 cargo, 2 cargo lock, 3/G legs, 4 leg lock, 5 entry flaps, 6 landing engines, 7 flight engines, 8 cargo arm, 9 payload release, 0 equipment. Space launches booster, next Space separates and starts ship. Throttle remains manual. Open bay then extend arm fully before release. Read the Mission Pack guide for mission-specific operation.
+type = VAB
+size = 85,145,32
+steamPublishedFileId = 0
+persistentId = 2800022500
+rot = 0,0,0,0
+missionFlag = Squad/Flags/default
+vesselType = Ship
+OverrideDefault = False,False,False,False
+OverrideActionControl = 0,0,0,0
+OverrideAxisControl = 0,0,0,0
+OverrideGroupNames = ,,,
+PART
+{
+	part = DenizStarshipCore_2800022500
+	partName = Part
+	persistentId = 2800022500
+	pos = 0,97.6,0
+	attPos = 0,0,0
+	attPos0 = 0,97.6,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizStarshipCargo_2800022501
+	link = DenizScaled.SEP.26.SHIP.AFT.LEFT.FLAP_2800022503
+	link = DenizScaled.SEP.26.SHIP.AFT.RIGHT.FLAP_2800022505
+	link = DenizScaled.SEP.26.R3.SL.C_2800022507
+	link = DenizScaled.SEP.26.R3.VAC_2800022508
+	link = DenizScaled.SEP.26.R3.SL.C_2800022509
+	link = DenizScaled.SEP.26.R3.VAC_2800022510
+	link = DenizScaled.SEP.26.R3.SL.C_2800022511
+	link = DenizScaled.SEP.26.R3.VAC_2800022512
+	link = dockingPort2_2800022513
+	link = DenizStarshipLeg_2800022514
+	link = DenizStarshipLeg_2800022515
+	link = DenizStarshipLeg_2800022516
+	link = DenizStarshipLeg_2800022517
+	link = solarPanels4_2800022518
+	link = solarPanels4_2800022519
+	link = batteryBank_2800022520
+	link = domeLight1_2800022521
+	link = telescopicLadderBay_2800022522
+	link = DenizSuperHeavy_2800022523
+	attN = node_top,DenizStarshipCargo_2800022501_-1.45773846e-08|13.6071033|0_0|1|0_-1.45773846e-08|13.6071033|0_0|1|0
+	attN = node_bottom,DenizSuperHeavy_2800022523_0|-20.1589342|0_0|-1|-1.50995804e-07_0|-20.1589342|0_0|-1|-1.50995804e-07
+	attN = node_fin_left,DenizScaled.SEP.26.SHIP.AFT.LEFT.FLAP_2800022503_-4.99719906|-14.4756124|9.72990849e-07_-1|-2.52881088e-07|0_-4.99719906|-14.4756124|9.72990849e-07_-1|-2.52881088e-07|0
+	attN = node_fin_right,DenizScaled.SEP.26.SHIP.AFT.RIGHT.FLAP_2800022505_4.99720097|-14.4756119|-9.72990845e-07_1|-5.05762194e-07|-1.19209234e-07_4.99720097|-14.4756119|-9.72990845e-07_1|-5.05762194e-07|-1.19209234e-07
+	attN = node_Docking,dockingPort2_2800022513_-1.28295159e-06|-1.64411354|-4.5999999_1.1920928e-07|3.37174795e-07|-1_-1.28295159e-06|-1.64411354|-4.5999999_1.1920928e-07|3.37174795e-07|-1
+	attN = node_raptor_1,DenizScaled.SEP.26.R3.SL.C_2800022507_-0.807751711|-17.1322712|0.466356449_5.52683322e-08|-1|-2.06264105e-07_-0.807751711|-17.1322712|0.466356449_5.52683322e-08|-1|-2.06264105e-07
+	attN = node_raptor_2,DenizScaled.SEP.26.R3.SL.C_2800022509_0.807753507|-17.1322712|0.466356106_-1.73480566e-07|-1|7.41958602e-08_0.807753507|-17.1322712|0.466356106_-1.73480566e-07|-1|7.41958602e-08
+	attN = node_raptor_3,DenizScaled.SEP.26.R3.SL.C_2800022511_6.56467232e-07|-17.1322712|-0.932711959_0|-1|1.50995801e-07_6.56467232e-07|-17.1322712|-0.932711959_0|-1|1.50995801e-07
+	attN = node_raptorv_1,DenizScaled.SEP.26.R3.VAC_2800022508_2.76552243|-15.7074721|-1.59667447_2.06264145e-07|-1|5.52682713e-08_2.76552243|-15.7074721|-1.59667447_2.06264145e-07|-1|5.52682713e-08
+	attN = node_raptorv_2,DenizScaled.SEP.26.R3.VAC_2800022510_1.39756126e-06|-15.7074733|3.19334984_0|-1|1.50995804e-07_1.39756126e-06|-15.7074733|3.19334984_0|-1|1.50995804e-07
+	attN = node_raptorv_3,DenizScaled.SEP.26.R3.VAC_2800022512_-2.76552348|-15.7074735|-1.59667537_-2.2484742e-08|-1|-1.8733653e-07_-2.76552348|-15.7074735|-1.59667537_-2.2484742e-08|-1|-1.8733653e-07
+	attN = node_raptorv_4,Null_0_2.76552205|-15.7074721|1.59667489_6.61961577e-08|-1|1.87336493e-07_2.76552205|-15.7074721|1.59667489_6.61961577e-08|-1|1.87336493e-07
+	attN = node_raptorv_5,Null_0_-2.76552124|-15.7074735|1.5966753_-1.41694059e-07|-1|5.6570286e-08_-2.76552124|-15.7074735|1.5966753_-1.41694059e-07|-1|5.6570286e-08
+	attN = node_raptorv_6,Null_0_1.54024414e-07|-15.7074733|-3.19335198_1.50995828e-07|-1|-1.50995798e-07_1.54024414e-07|-15.7074733|-3.19335198_1.50995828e-07|-1|-1.50995798e-07
+	attN = node_raptorv_alt_1,Null_0_3.19335019|-15.7074721|7.32293958e-07_1.56852052e-07|-1|1.29140115e-07_3.19335019|-15.7074721|7.32293958e-07_1.56852052e-07|-1|1.29140115e-07
+	attN = node_raptorv_alt_2,Null_0_-1.59667383|-15.7074734|2.76552301_-6.96417094e-08|-1|1.08910499e-07_-1.59667383|-15.7074734|2.76552301_-6.96417094e-08|-1|1.08910499e-07
+	attN = node_raptorv_alt_3,Null_0_-1.59667561|-15.7074735|-2.76552339_8.00521121e-08|-1|-1.95336251e-07_-1.59667561|-15.7074735|-2.76552339_8.00521121e-08|-1|-1.95336251e-07
+	attN = node_raptorv_alt_4,Null_0_1.59667499|-15.7074722|2.76552261_-3.04845381e-08|-1|1.73480539e-07_1.59667499|-15.7074722|2.76552261_-3.04845381e-08|-1|1.73480539e-07
+	attN = node_raptorv_alt_5,Null_0_-3.19334934|-15.7074736|7.20721581e-07_-1.45139585e-07|-1|-4.37114217e-08_-3.19334934|-15.7074736|7.20721581e-07_-1.45139585e-07|-1|-4.37114217e-08
+	attN = node_raptorv_alt_6,Null_0_1.59667622|-15.7074732|-2.76552398_2.12120333e-07|-1|-7.71239639e-08_1.59667622|-15.7074732|-2.76552398_2.12120333e-07|-1|-7.71239639e-08
+	attN = node_raptorv_SF_1,Null_0_3.1660307|-15.7074697|-0.416815798_1.39037726e-07|-1|-1.00727137e-07_3.1660307|-15.7074697|-0.416815798_1.39037726e-07|-1|-1.00727137e-07
+	attN = node_raptorv_SF_2,Null_0_1.94398886|-15.7074699|-2.53345562_-9.50643918e-08|-1|3.72485617e-08_1.94398886|-15.7074699|-2.53345562_-9.50643918e-08|-1|3.72485617e-08
+	attN = node_raptorv_SF_3,Null_0_-1.94398874|-15.7074733|-2.53345417_-9.50644056e-08|-1|-3.72485057e-08_-1.94398874|-15.7074733|-2.53345417_-9.50644056e-08|-1|-3.72485057e-08
+	attN = node_raptorv_SF_4,Null_0_-3.16603083|-15.7074735|-0.416813811_1.39037788e-07|-1|1.00727082e-07_-3.16603083|-15.7074735|-0.416813811_1.39037788e-07|-1|1.00727082e-07
+	attN = node_raptorv_SF_5,Null_0_-1.2220422|-15.7074733|2.95027003_1.45903331e-07|-1|4.23292151e-08_-1.2220422|-15.7074733|2.95027003_1.45903331e-07|-1|4.23292151e-08
+	attN = node_raptorv_SF_6,Null_0_1.22204388|-15.7074733|2.95027032_1.459033e-07|-1|-4.23293413e-08_1.22204388|-15.7074733|2.95027032_1.459033e-07|-1|-4.23293413e-08
+	attN = srfAttach,Null_0_0|0|0_0|0|1_0|0|0_0|0|1
+	MODULE
+	{
+		name = ModuleColorChanger
+	}
+	MODULE
+	{
+		name = ModuleCargoBay
+	}
+	MODULE
+	{
+		name = ModuleCommand
+	}
+	MODULE
+	{
+		name = ModuleSAS
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_Raptor_VAC
+		currentSubtype = 3RVAC
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_Tiles
+		currentSubtype = TheGoodSubtype
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+	}
+	MODULE
+	{
+		name = ModuleB9AssignUiGroups
+	}
+	MODULE
+	{
+		name = MechJebCore
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_Fuel
+		currentSubtype = SEPLMOX
+	}
+	MODULE
+	{
+		name = ModuleCryoTank
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = rcsFX
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = ventFX
+	}
+	MODULE
+	{
+		name = TrajectoriesVesselSettings
+	}
+	MODULE
+	{
+		name = DenizStarshipControls
+		cargoLocked = True
+		legsLocked = False
+		cargoOpen = False
+		legsExtended = False
+		ACTIONS
+		{
+			ToggleCargo
+			{
+				actionGroup = Custom01
+			}
+			CargoLockAction
+			{
+				actionGroup = Custom02
+			}
+			ToggleLegs
+			{
+				actionGroup = Gear, Custom03
+			}
+			LegLockAction
+			{
+				actionGroup = Custom04
+			}
+			Reentry
+			{
+				actionGroup = Custom05
+			}
+			LandingEngines
+			{
+				actionGroup = Custom06
+			}
+			FlightEngines
+			{
+				actionGroup = Custom07
+			}
+			ArmAction
+			{
+				actionGroup = Custom08
+			}
+			ReleaseAction
+			{
+				actionGroup = Custom09
+			}
+			Equipment
+			{
+				actionGroup = Custom10
+			}
+			Cutoff
+			{
+				actionGroup = Abort
+			}
+		}
+	}
+	MODULE
+	{
+		name = kOSProcessor
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = SHIP_TANK
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizStarshipCargo_2800022501
+	partName = Part
+	persistentId = 2800022501
+	pos = 6.99406937e-07,115.839065,0
+	attPos = 0,0,0
+	attPos0 = 6.99406937e-07,115.839065,0
+	rot = 0,0,-7.5497903e-08,1
+	attRot = 0,0,-7.5497903e-08,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizStarshipCabin_2800022502
+	link = DenizScaled.SEP.26.SHIP.FWD.LEFT.FLAP_2800022504
+	link = DenizScaled.SEP.26.SHIP.FWD.RIGHT.FLAP_2800022506
+	link = DenizCargoArm_2800022543
+	attN = node_fin_right,DenizScaled.SEP.26.SHIP.FWD.RIGHT.FLAP_2800022506_3.67421881|6.80463791|-1.33730833_0.883021745|0.342020141|-0.321395116_3.67421881|6.80463791|-1.33730833_0.883021745|0.342020141|-0.321395116
+	attN = node_fin_left,DenizScaled.SEP.26.SHIP.FWD.LEFT.FLAP_2800022504_-3.67422446|6.80463791|-1.33730682_-0.883022047|0.342019926|-0.321394514_-3.67422446|6.80463791|-1.33730682_-0.883022047|0.342019926|-0.321394514
+	attN = node_bottom,DenizStarshipCore_2800022500_-1.45775125e-08|-4.63196182|0_1.5099581e-07|-1|0_-1.45775125e-08|-4.63196182|0_1.5099581e-07|-1|0
+	attN = node_cargo,Null_0_-8.48011489e-07|-4.02547836|2.38418687e-07_-4.37113847e-08|1|0_-8.48011489e-07|-4.02547836|2.38418687e-07_-4.37113847e-08|1|0
+	attN = srfAttach,Null_0_0|0|1.6_0|0|1_0|0|1.6_0|0|1
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		animTime = 0
+		animSwitch = True
+		deployPercent = 100
+	}
+	MODULE
+	{
+		name = ModuleCargoBay
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_Ablative
+		currentSubtype = 39
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+	}
+	MODULE
+	{
+		name = ModuleB9AssignUiGroups
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_Fuel
+		currentSubtype = SEPLMOX
+	}
+	MODULE
+	{
+		name = ModuleCryoTank
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = rcsFX
+	}
+	MODULE
+	{
+		name = DenizCargoPanel
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = CARGO_BAY
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizStarshipCabin_2800022502
+	partName = Part
+	persistentId = 2800022502
+	pos = 1.64162077e-06,122.079065,-0.56
+	attPos = 0,0,0
+	attPos0 = 1.64162077e-06,122.079065,-0.56
+	rot = 0,0,-7.5497903e-08,1
+	attRot = 0,0,-7.5497903e-08,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = hatch,Null_0_0|0.1306335|-0.9950025_0|0|-1_0|0.1306335|-0.9950025_0|0|-1
+	attN = nose,Null_0_0|0.1306335|1.0253025_0|0|1_0|0.1306335|1.0253025_0|0|1
+	attN = bottom,Null_0_0|-0.3026805|0_0|-1|0_0|-0.3026805|0_0|-1|0
+	attN = top,Null_0_0|0.56394675|0_0|1|0_0|0.56394675|0_0|1|0
+	srfN = srfAttach,DenizStarshipCargo_2800022501_0|0|0_0|0|1_0|0|0_0|0|1
+	MODULE
+	{
+		name = ModuleCommand
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+	}
+	MODULE
+	{
+		name = ModuleScienceContainer
+	}
+	MODULE
+	{
+		name = FlagDecal
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+	}
+	MODULE
+	{
+		name = ModuleProbeControlPoint
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		selectedVariant = Bare
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = ModuleInventoryPart
+	}
+	MODULE
+	{
+		name = MechJebCore
+	}
+	MODULE
+	{
+		name = TrajectoriesVesselSettings
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = FLIGHT_CABIN
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.SHIP.AFT.LEFT.FLAP_2800022503
+	partName = Part
+	persistentId = 2800022503
+	pos = -4.99719906,83.1243875,9.72990834e-07
+	attPos = 0,0,0
+	attPos0 = -4.99719906,83.1243875,9.72990834e-07
+	rot = 0,1.06770142e-07,-0.707106692,0.707106871
+	attRot = 0,1.06770142e-07,-0.707106692,0.707106871
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_fin_left,DenizStarshipCore_2800022500_-9.95590446e-08|0|0_0|1|1.50995803e-07_-9.95590446e-08|0|0_0|1|1.50995803e-07
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = ModuleCenterFollowTransform
+	}
+	MODULE
+	{
+		name = ModuleSEPControlSurface
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_Tiles
+		currentSubtype = TheGoodSubtype
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.SHIP.FWD.LEFT.FLAP_2800022504
+	partName = Part
+	persistentId = 2800022504
+	pos = -3.67422245,122.643712,-1.33730404
+	attPos = 0,0,0
+	attPos0 = -3.67422245,122.643712,-1.33730404
+	rot = 0.280167313,6.8967597e-07,-0.769750736,0.573576569
+	attRot = 0.280167313,6.8967597e-07,-0.769750736,0.573576569
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_fin_left,DenizStarshipCargo_2800022501_8.50497793e-06|1.66893032e-06|4.13662023e-07_-6.61034445e-08|1|8.71913353e-07_8.50497793e-06|1.66893032e-06|4.13662023e-07_-6.61034445e-08|1|8.71913353e-07
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = ModuleCenterFollowTransform
+	}
+	MODULE
+	{
+		name = ModuleSEPControlSurface
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.SHIP.AFT.RIGHT.FLAP_2800022505
+	partName = Part
+	persistentId = 2800022505
+	pos = 4.99720097,83.124388,-9.72990857e-07
+	attPos = 0,0,0
+	attPos0 = 4.99720097,83.124388,-9.72990857e-07
+	rot = 8.42936187e-08,0,0.707106453,0.707107109
+	attRot = 8.42936187e-08,0,0.707106453,0.707107109
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_fin_right,DenizStarshipCore_2800022500_9.95590446e-08|0|0_-4.21468371e-07|1|0_9.95590446e-08|0|0_-4.21468371e-07|1|0
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = ModuleCenterFollowTransform
+	}
+	MODULE
+	{
+		name = ModuleSEPControlSurface
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_Tiles
+		currentSubtype = TheGoodSubtype
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.SHIP.FWD.RIGHT.FLAP_2800022506
+	partName = Part
+	persistentId = 2800022506
+	pos = 3.67422026,122.643711,-1.33730554
+	attPos = 0,0,0
+	attPos0 = 3.67422026,122.643711,-1.33730554
+	rot = 0.280167778,-6.11799395e-07,0.769750483,0.573576682
+	attRot = 0.280167778,-6.11799395e-07,0.769750483,0.573576682
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_fin_right,DenizStarshipCargo_2800022501_-8.50497793e-06|1.66893032e-06|4.13662023e-07_-1.71870318e-07|1|8.57358241e-07_-8.50497793e-06|1.66893032e-06|4.13662023e-07_-1.71870318e-07|1|8.57358241e-07
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = ModuleCenterFollowTransform
+	}
+	MODULE
+	{
+		name = ModuleSEPControlSurface
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.R3.SL.C_2800022507
+	partName = Part
+	persistentId = 2800022507
+	pos = -0.807751551,77.5677287,0.466355851
+	attPos = 0,0,0
+	attPos0 = -0.807751551,77.5677287,0.466355851
+	rot = 1.03132052e-07,0,2.76341661e-08,1
+	attRot = 1.03132052e-07,0,2.76341661e-08,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = 1
+	resPri = 0
+	dstg = 1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_top_R3,DenizStarshipCore_2800022500_0|2.9000001|0_0|1|0_0|2.9000001|0_0|1|0
+	attN = node_bottom_R3_SL,Null_0_0|0.00789642334|3.81469727e-06_1.50995805e-07|-1|-8.74227647e-08_0|0.00789642334|3.81469727e-06_1.50995805e-07|-1|-8.74227647e-08
+	attN = srfAttach,Null_0_0|0.9904|0_0|1|0_0|0.9904|0_0|1|0
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+	}
+	MODULE
+	{
+		name = ModuleSEPRaptor
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+	}
+	MODULE
+	{
+		name = ModuleSEPPartSwitchAction
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_NODE_Switch
+		currentSubtype = NoNodes
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_NODE_Switch
+		currentSubtype = StaticOff
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = nagataFX
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = plumeSwitch
+		currentSubtype = default
+	}
+	MODULE
+	{
+		name = DenizRaptorEditorGuard
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.R3.VAC_2800022508
+	partName = Part
+	persistentId = 2800022508
+	pos = 2.76552303,78.9925278,-1.59667431
+	attPos = 0,0,0
+	attPos0 = 2.76552303,78.9925278,-1.59667431
+	rot = -2.76341356e-08,0,1.03132072e-07,1
+	attRot = -2.76341356e-08,0,1.03132072e-07,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = 1
+	resPri = 0
+	dstg = 1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_top_R3,DenizStarshipCore_2800022500_0|2.9000001|0_0|1|0_0|2.9000001|0_0|1|0
+	attN = node_bottom_R3_VAC,Null_0_-7.62939453e-06|-1.47268677|3.81469727e-06_-3.89414364e-07|-1|8.74228149e-08_-7.62939453e-06|-1.47268677|3.81469727e-06_-3.89414364e-07|-1|8.74228149e-08
+	attN = srfAttach,Null_0_0|0.9904|0_0|1|0_0|0.9904|0_0|1|0
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_NODE_Switch
+		currentSubtype = NoNodes
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = DraperFX
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.R3.SL.C_2800022509
+	partName = Part
+	persistentId = 2800022509
+	pos = 0.807753004,77.5677287,0.466356321
+	attPos = 0,0,0
+	attPos0 = 0.807753004,77.5677287,0.466356321
+	rot = 5.65703234e-08,0.866025404,-7.54978913e-08,0.5
+	attRot = 5.65703234e-08,0.866025404,-7.54978913e-08,0.5
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = 1
+	resPri = 0
+	dstg = 1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_top_R3,DenizStarshipCore_2800022500_0|2.9000001|0_0|1|0_0|2.9000001|0_0|1|0
+	attN = node_bottom_R3_SL,Null_0_0|0.00789642334|3.81469727e-06_1.50995805e-07|-1|-8.74227647e-08_0|0.00789642334|3.81469727e-06_1.50995805e-07|-1|-8.74227647e-08
+	attN = srfAttach,Null_0_0|0.9904|0_0|1|0_0|0.9904|0_0|1|0
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+	}
+	MODULE
+	{
+		name = ModuleSEPRaptor
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+	}
+	MODULE
+	{
+		name = ModuleSEPPartSwitchAction
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_NODE_Switch
+		currentSubtype = NoNodes
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_NODE_Switch
+		currentSubtype = StaticOff
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = nagataFX
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = plumeSwitch
+		currentSubtype = default
+	}
+	MODULE
+	{
+		name = DenizRaptorEditorGuard
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.R3.VAC_2800022510
+	partName = Part
+	persistentId = 2800022510
+	pos = 1.39756123e-06,78.9925266,3.19335028
+	attPos = 0,0,0
+	attPos0 = 1.39756123e-06,78.9925266,3.19335028
+	rot = -3.77489463e-08,0.866025404,-6.53831035e-08,0.5
+	attRot = -3.77489463e-08,0.866025404,-6.53831035e-08,0.5
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = 1
+	resPri = 0
+	dstg = 1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_top_R3,DenizStarshipCore_2800022500_0|2.9000001|0_0|1|0_0|2.9000001|0_0|1|0
+	attN = node_bottom_R3_VAC,Null_0_-7.62939453e-06|-1.47268677|3.81469727e-06_-3.89414364e-07|-1|8.74228149e-08_-7.62939453e-06|-1.47268677|3.81469727e-06_-3.89414364e-07|-1|8.74228149e-08
+	attN = srfAttach,Null_0_0|0.9904|0_0|1|0_0|0.9904|0_0|1|0
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_NODE_Switch
+		currentSubtype = NoNodes
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = DraperFX
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.R3.SL.C_2800022511
+	partName = Part
+	persistentId = 2800022511
+	pos = 6.56467201e-07,77.5677287,-0.932711521
+	attPos = 0,0,0
+	attPos0 = 6.56467201e-07,77.5677287,-0.932711521
+	rot = 3.77489549e-08,0.866025404,-6.53830971e-08,-0.5
+	attRot = 3.77489549e-08,0.866025404,-6.53830971e-08,-0.5
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = 1
+	resPri = 0
+	dstg = 1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_top_R3,DenizStarshipCore_2800022500_0|2.9000001|0_0|1|0_0|2.9000001|0_0|1|0
+	attN = node_bottom_R3_SL,Null_0_0|0.00789642334|3.81469727e-06_1.50995805e-07|-1|-8.74227647e-08_0|0.00789642334|3.81469727e-06_1.50995805e-07|-1|-8.74227647e-08
+	attN = srfAttach,Null_0_0|0.9904|0_0|1|0_0|0.9904|0_0|1|0
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+	}
+	MODULE
+	{
+		name = ModuleSEPRaptor
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+	}
+	MODULE
+	{
+		name = ModuleSEPPartSwitchAction
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_NODE_Switch
+		currentSubtype = NoNodes
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_NODE_Switch
+		currentSubtype = StaticOff
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = nagataFX
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = plumeSwitch
+		currentSubtype = default
+	}
+	MODULE
+	{
+		name = DenizRaptorEditorGuard
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.R3.VAC_2800022512
+	partName = Part
+	persistentId = 2800022512
+	pos = -2.76552355,78.9925264,-1.59667591
+	attPos = 0,0,0
+	attPos0 = -2.76552355,78.9925264,-1.59667591
+	rot = -3.70979536e-08,0.866025404,8.67402826e-08,-0.5
+	attRot = -3.70979536e-08,0.866025404,8.67402826e-08,-0.5
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = 1
+	resPri = 0
+	dstg = 1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_top_R3,DenizStarshipCore_2800022500_0|2.9000001|0_0|1|0_0|2.9000001|0_0|1|0
+	attN = node_bottom_R3_VAC,Null_0_-7.62939453e-06|-1.47268677|3.81469727e-06_-3.89414364e-07|-1|8.74228149e-08_-7.62939453e-06|-1.47268677|3.81469727e-06_-3.89414364e-07|-1|8.74228149e-08
+	attN = srfAttach,Null_0_0|0.9904|0_0|1|0_0|0.9904|0_0|1|0
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_NODE_Switch
+		currentSubtype = NoNodes
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = DraperFX
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = dockingPort2_2800022513
+	partName = Part
+	persistentId = 2800022513
+	pos = -1.28295159e-06,95.9558865,-4.5999999
+	attPos = 0,0,0
+	attPos0 = -1.28295159e-06,95.9558865,-4.5999999
+	rot = -0.707106662,-4.2146845e-08,-4.2146845e-08,0.7071069
+	attRot = -0.707106662,-4.2146845e-08,-4.2146845e-08,0.7071069
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,Null_0_0|0.2828832|0_0|1|0_0|0.2828832|0_0|1|0
+	attN = bottom,DenizStarshipCore_2800022500_0|0|0_0|-1|0_0|0|0_0|-1|0
+	attN = srfAttach,Null_0_0|0|0_0|-1|0_0|0|0_0|-1|0
+	MODULE
+	{
+		name = ModuleDockingNode
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = SHIP_DOCKING
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = lookSwitch
+		currentSubtype = Stripe
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizStarshipLeg_2800022514
+	partName = Part
+	persistentId = 2800022514
+	pos = 3.13389725,79.36,3.13389725
+	attPos = 0,0,0
+	attPos0 = 3.13389725,79.36,3.13389725
+	rot = 0,0.382683432,0,0.923879533
+	attRot = 0,0.382683432,0,0.923879533
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.23020986|0.182187648_0|0.5735765|0.819152_0|1.23020986|0.182187648_0|0.5735765|0.819152
+	srfN = srfAttach,DenizStarshipCore_2800022500_0|1.23020986|0.182187648_0|0.5735765|0.819152_0|1.23020986|0.182187648_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = SHIP_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLeg_2800022515
+	partName = Part
+	persistentId = 2800022515
+	pos = 3.13389725,79.36,-3.13389725
+	attPos = 0,0,0
+	attPos0 = 3.13389725,79.36,-3.13389725
+	rot = 0,0.923879533,0,0.382683432
+	attRot = 0,0.923879533,0,0.382683432
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.23020986|0.182187648_0|0.5735765|0.819152_0|1.23020986|0.182187648_0|0.5735765|0.819152
+	srfN = srfAttach,DenizStarshipCore_2800022500_0|1.23020986|0.182187648_0|0.5735765|0.819152_0|1.23020986|0.182187648_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = SHIP_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLeg_2800022516
+	partName = Part
+	persistentId = 2800022516
+	pos = -3.13389725,79.36,-3.13389725
+	attPos = 0,0,0
+	attPos0 = -3.13389725,79.36,-3.13389725
+	rot = 0,0.923879533,0,-0.382683432
+	attRot = 0,0.923879533,0,-0.382683432
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.23020986|0.182187648_0|0.5735765|0.819152_0|1.23020986|0.182187648_0|0.5735765|0.819152
+	srfN = srfAttach,DenizStarshipCore_2800022500_0|1.23020986|0.182187648_0|0.5735765|0.819152_0|1.23020986|0.182187648_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = SHIP_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLeg_2800022517
+	partName = Part
+	persistentId = 2800022517
+	pos = -3.13389725,79.36,3.13389725
+	attPos = 0,0,0
+	attPos0 = -3.13389725,79.36,3.13389725
+	rot = 0,0.382683432,0,-0.923879533
+	attRot = 0,0.382683432,0,-0.923879533
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.23020986|0.182187648_0|0.5735765|0.819152_0|1.23020986|0.182187648_0|0.5735765|0.819152
+	srfN = srfAttach,DenizStarshipCore_2800022500_0|1.23020986|0.182187648_0|0.5735765|0.819152_0|1.23020986|0.182187648_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = SHIP_LEG
+	}
+}
+PART
+{
+	part = solarPanels4_2800022518
+	partName = Part
+	persistentId = 2800022518
+	pos = -4.48,100,0.64
+	attPos = 0,0,0
+	attPos0 = -4.48,100,0.64
+	rot = 0,-0.707106781,0,0.707106781
+	attRot = 0,-0.707106781,0,0.707106781
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	srfN = srfAttach,DenizStarshipCore_2800022500_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = SHIP_SOLAR
+	}
+}
+PART
+{
+	part = solarPanels4_2800022519
+	partName = Part
+	persistentId = 2800022519
+	pos = 4.48,100,0.64
+	attPos = 0,0,0
+	attPos0 = 4.48,100,0.64
+	rot = 0,0.707106781,0,0.707106781
+	attRot = 0,0.707106781,0,0.707106781
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	srfN = srfAttach,DenizStarshipCore_2800022500_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = SHIP_SOLAR
+	}
+}
+PART
+{
+	part = batteryBank_2800022520
+	partName = Part
+	persistentId = 2800022520
+	pos = 0,100.8,4.448
+	attPos = 0,0,0
+	attPos0 = 0,100.8,4.448
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,Null_0_0|0.1108553|0_0|1|0_0|0.1108553|0_0|1|0
+	attN = bottom,Null_0_0|-0.1108553|0_0|-1|0_0|-0.1108553|0_0|-1|0
+	srfN = srfAttach,DenizStarshipCore_2800022500_0|0|0_0|0|1_0|0|0_0|0|1
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = domeLight1_2800022521
+	partName = Part
+	persistentId = 2800022521
+	pos = 0,100.8,-5.12
+	attPos = 0,0,0
+	attPos0 = 0,100.8,-5.12
+	rot = 0,1,0,0
+	attRot = 0,1,0,0
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Root
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|0|0_0|0|-1_0|0|0_0|0|-1
+	srfN = srfAttach,DenizStarshipCore_2800022500_0|0|0_0|0|-1_0|0|0_0|0|-1
+	MODULE
+	{
+		name = ModuleLight
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = telescopicLadderBay_2800022522
+	partName = Part
+	persistentId = 2800022522
+	pos = 0.64,100.8,5.12
+	attPos = 0,0,0
+	attPos0 = 0.64,100.8,5.12
+	rot = 0,1,0,0
+	attRot = 0,1,0,0
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Root
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	srfN = srfAttach,DenizStarshipCore_2800022500_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = RetractableLadder
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = ModuleLight
+	}
+	MODULE
+	{
+		name = RetractableLadderLightController
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = DenizSuperHeavy_2800022523
+	partName = Part
+	persistentId = 2800022523
+	pos = 0,43.0646344,-5.19069688e-06
+	attPos = 0,0,0
+	attPos0 = 0,43.0646344,-5.19069688e-06
+	rot = 7.5497902e-08,0,0,1
+	attRot = 7.5497902e-08,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = 1
+	resPri = 0
+	dstg = 1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizScaled.SEP.26.BOOSTER.CLUSTER_2800022524
+	link = DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800022525
+	link = DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800022526
+	link = DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800022527
+	link = DenizStarshipLegBooster_2800022528
+	link = DenizStarshipLegBooster_2800022529
+	link = DenizStarshipLegBooster_2800022530
+	link = DenizStarshipLegBooster_2800022531
+	link = DenizStarshipLegBooster_2800022532
+	link = DenizStarshipLegBooster_2800022533
+	attN = node_top,DenizStarshipCore_2800022500_0|34.3764313|0_0|1|0_0|34.3764313|0_0|1|0
+	attN = node_bottom,DenizScaled.SEP.26.BOOSTER.CLUSTER_2800022524_0|-34.5015763|0_-1.50995803e-07|-1|0_0|-34.5015763|0_-1.50995803e-07|-1|0
+	attN = node_gridfin_1,DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800022525_-4.46456397|27.7164268|0_-1|-2.98023224e-08|-2.98023233e-08_-4.46456397|27.7164268|0_-1|-2.98023224e-08|-2.98023233e-08
+	attN = node_gridfin_2,DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800022526_4.46456397|27.7164268|0_1|-2.98023224e-08|-2.98023233e-08_4.46456397|27.7164268|0_1|-2.98023224e-08|-2.98023233e-08
+	attN = node_gridfin_3,DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800022527_-5.96046528e-08|27.7164268|4.46456397_0|-1.68587397e-07|1_-5.96046528e-08|27.7164268|4.46456397_0|-1.68587397e-07|1
+	MODULE
+	{
+		name = ModuleCommand
+	}
+	MODULE
+	{
+		name = ModuleSAS
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = DockingSwitch
+		currentSubtype = Disabled
+	}
+	MODULE
+	{
+		name = ModuleB9AssignUiGroups
+	}
+	MODULE
+	{
+		name = MechJebCore
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_Fuel
+		currentSubtype = SEPLMOX
+	}
+	MODULE
+	{
+		name = ModuleCryoTank
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = rcsFX
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = ventFX
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleEngineStartupTimer
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = HSR
+	}
+	MODULE
+	{
+		name = TrajectoriesVesselSettings
+	}
+	MODULE
+	{
+		name = DenizStarshipControls
+		ACTIONS
+		{
+			ToggleCargo
+			{
+				actionGroup = Custom01
+			}
+			CargoLockAction
+			{
+				actionGroup = Custom02
+			}
+			ToggleLegs
+			{
+				actionGroup = Gear, Custom03
+			}
+			LegLockAction
+			{
+				actionGroup = Custom04
+			}
+			Reentry
+			{
+				actionGroup = Custom05
+			}
+			LandingEngines
+			{
+				actionGroup = Custom06
+			}
+			FlightEngines
+			{
+				actionGroup = Custom07
+			}
+			ArmAction
+			{
+				actionGroup = Custom08
+			}
+			ReleaseAction
+			{
+				actionGroup = Custom09
+			}
+			Equipment
+			{
+				actionGroup = Custom10
+			}
+			Cutoff
+			{
+				actionGroup = Abort
+			}
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_TANK
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.BOOSTER.CLUSTER_2800022524
+	partName = Part
+	persistentId = 2800022524
+	pos = -1.69416866e-07,7.44105636,-1.05697077e-05
+	attPos = 0,0,0
+	attPos0 = -1.69416866e-07,7.44105636,-1.05697077e-05
+	rot = 7.5497902e-08,0,-7.54978959e-08,1
+	attRot = 7.5497902e-08,0,-7.54978959e-08,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizStarbaseMount_2800022534
+	attN = node_top_Cluster,DenizSuperHeavy_2800022523_0|1.1220018|0_0|1|0_0|1.1220018|0_0|1|0
+	attN = node_bottom_Cluster,DenizStarbaseMount_2800022534_-0.000306926709|-1.18762986|0.000215163018_0|-1|3.89414367e-07_-0.000306926709|-1.18762986|0.000215163018_0|-1|3.89414367e-07
+	MODULE
+	{
+		name = ModuleSEPEngineSwitch
+		selectedIndex = 0
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleSEPProceduralEngineGUI
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = DockingSwitch
+		currentSubtype = Disabled
+	}
+	MODULE
+	{
+		name = ModuleSEPPartSwitchAction
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = raptorclusterFull
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = raptorclusterMiddle
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = raptorclusterMiddle2
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = raptorclusterInner
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = plumeSwitch
+		currentSubtype = default
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_ENGINES
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800022525
+	partName = Part
+	persistentId = 2800022525
+	pos = -4.44405158,70.7810612,-9.95258351e-07
+	attPos = 0,0,0
+	attPos0 = -4.44405158,70.7810612,-9.95258351e-07
+	rot = 2.52881088e-07,0,-1,0
+	attRot = 2.52881088e-07,0,-1,0
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_gridfin,DenizSuperHeavy_2800022523_0.0205123901|0|0_-1|8.42936843e-08|-2.52881088e-07_0.0205123901|0|0_-1|8.42936843e-08|-2.52881088e-07
+	attN = srfAttach,Null_0_0.096|0|0_-1|0|0_0.096|0|0_-1|0|0
+	MODULE
+	{
+		name = ModuleControlSurface
+	}
+	MODULE
+	{
+		name = ModuleCenterFollowTransform
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_CatchPoint
+		currentSubtype = Installed
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800022526
+	partName = Part
+	persistentId = 2800022526
+	pos = 4.44405158,70.7810612,-9.9983423e-07
+	attPos = 0,0,0
+	attPos0 = 4.44405158,70.7810612,-9.9983423e-07
+	rot = 0,1.41341708e-07,2.72456885e-08,1
+	attRot = 0,1.41341708e-07,2.72456885e-08,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_gridfin,DenizSuperHeavy_2800022523_0.0205123901|0|0_-1|8.42936843e-08|-2.52881088e-07_0.0205123901|0|0_-1|8.42936843e-08|-2.52881088e-07
+	attN = srfAttach,Null_0_0.096|0|0_-1|0|0_0.096|0|0_-1|0|0
+	MODULE
+	{
+		name = ModuleControlSurface
+	}
+	MODULE
+	{
+		name = ModuleCenterFollowTransform
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_CatchPoint
+		currentSubtype = Installed
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800022527
+	partName = Part
+	persistentId = 2800022527
+	pos = -6.47918286e-08,70.7810605,4.44405057
+	attPos = 0,0,0
+	attPos0 = -6.47918286e-08,70.7810605,4.44405057
+	rot = -5.96045711e-08,-0.707106692,-2.2597942e-07,0.707106871
+	attRot = -5.96045711e-08,-0.707106692,-2.2597942e-07,0.707106871
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_gridfin,DenizSuperHeavy_2800022523_0.0205123901|0|0_-1|8.42936843e-08|-2.52881088e-07_0.0205123901|0|0_-1|8.42936843e-08|-2.52881088e-07
+	attN = srfAttach,Null_0_0.096|0|0_-1|0|0_0.096|0|0_-1|0|0
+	MODULE
+	{
+		name = ModuleControlSurface
+	}
+	MODULE
+	{
+		name = ModuleCenterFollowTransform
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_CatchPoint
+		currentSubtype = Installed
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizStarshipLegBooster_2800022528
+	partName = Part
+	persistentId = 2800022528
+	pos = 0,9.46463378,4.39998974
+	attPos = 0,0,0
+	attPos0 = 0,9.46463378,4.39998974
+	rot = 7.5497902e-08,0,0,1
+	attRot = 7.5497902e-08,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	srfN = srfAttach,DenizSuperHeavy_2800022523_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLegBooster_2800022529
+	partName = Part
+	persistentId = 2800022529
+	pos = 3.81051178,9.46463412,2.19998974
+	attPos = 0,0,0
+	attPos0 = 3.81051178,9.46463412,2.19998974
+	rot = 6.53830984e-08,0.5,3.77489556e-08,0.866025404
+	attRot = 6.53830984e-08,0.5,3.77489556e-08,0.866025404
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	srfN = srfAttach,DenizSuperHeavy_2800022523_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLegBooster_2800022530
+	partName = Part
+	persistentId = 2800022530
+	pos = 3.81051178,9.46463478,-2.20001026
+	attPos = 0,0,0
+	attPos0 = 3.81051178,9.46463478,-2.20001026
+	rot = 3.77489464e-08,0.866025404,6.53831037e-08,0.5
+	attRot = 3.77489464e-08,0.866025404,6.53831037e-08,0.5
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	srfN = srfAttach,DenizSuperHeavy_2800022523_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLegBooster_2800022531
+	partName = Part
+	persistentId = 2800022531
+	pos = 0,9.46463511,-4.40001026
+	attPos = 0,0,0
+	attPos0 = 0,9.46463511,-4.40001026
+	rot = 0,1,7.5497902e-08,0
+	attRot = 0,1,7.5497902e-08,0
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	srfN = srfAttach,DenizSuperHeavy_2800022523_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLegBooster_2800022532
+	partName = Part
+	persistentId = 2800022532
+	pos = -3.81051178,9.46463478,-2.20001026
+	attPos = 0,0,0
+	attPos0 = -3.81051178,9.46463478,-2.20001026
+	rot = -3.77489556e-08,0.866025404,6.53830984e-08,-0.5
+	attRot = -3.77489556e-08,0.866025404,6.53830984e-08,-0.5
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	srfN = srfAttach,DenizSuperHeavy_2800022523_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLegBooster_2800022533
+	partName = Part
+	persistentId = 2800022533
+	pos = -3.81051178,9.46463412,2.19998974
+	attPos = 0,0,0
+	attPos0 = -3.81051178,9.46463412,2.19998974
+	rot = -6.53831037e-08,0.5,3.77489464e-08,-0.866025404
+	attRot = -6.53831037e-08,0.5,3.77489464e-08,-0.866025404
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	srfN = srfAttach,DenizSuperHeavy_2800022523_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_LEG
+	}
+}
+PART
+{
+	part = DenizStarbaseMount_2800022534
+	partName = Part
+	persistentId = 2800022534
+	pos = -0.000309083354,-5.71976076,0.000207268613
+	attPos = 0,0,0
+	attPos0 = -0.000309083354,-5.71976076,0.000207268613
+	rot = -1.19209282e-07,0,-7.54978959e-08,1
+	attRot = -1.19209282e-07,0,-7.54978959e-08,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizScaled.SLE.SS.OLIT.Base_2800022535
+	link = DenizScaled.SLE.SS.OLIT.Base_2800022539
+	attN = node_stack_top,DenizScaled.SEP.26.BOOSTER.CLUSTER_2800022524_0|11.9731873|0_0|1|0_0|11.9731873|0_0|1|0
+	attN = bottom,Null_0_0|7.16568832|0_0|-1|3.37174794e-07_0|7.16568832|0_0|-1|3.37174794e-07
+	attN = connect02,Null_0_0|7.16568832|0_0|1|-1.68587411e-07_0|7.16568832|0_0|1|-1.68587411e-07
+	attN = connect01,DenizScaled.SLE.SS.OLIT.Base_2800022535_55.0292171|-8.69419785|2.79597593_0|1|1.73751332e-07_55.0292171|-8.69419785|2.79597593_0|1|1.73751332e-07
+	attN = connect03,DenizScaled.SLE.SS.OLIT.Base_2800022539_-33.35104|-8.69419784|-1.69453086_0|1|0_-33.35104|-8.69419784|-1.69453086_0|1|0
+	MODULE
+	{
+		name = DenizStarbaseClamp
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = structureSwitch
+		currentSubtype = Complete
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleCommand
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = LAUNCH_MOUNT
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SLE.SS.OLIT.Base_2800022535
+	partName = Part
+	persistentId = 2800022535
+	pos = 55.0289097,-8.81396144,2.79618413
+	attPos = 0,0,0
+	attPos0 = 55.0289097,-8.81396144,2.79618413
+	rot = -2.10672825e-07,0,-1.85250512e-07,1
+	attRot = -2.10672825e-07,0,-1.85250512e-07,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizScaled.SLE.SS.OLIT.Core_2800022536
+	attN = top,DenizScaled.SLE.SS.OLIT.Core_2800022536_0|5.59359039|0_0|1|0_0|5.59359039|0_0|1|0
+	attN = bottom,DenizStarbaseMount_2800022534_-9.18296781e-07|-5.6000048|-1.21862108e-06_2.2242814e-07|-1|-3.56678418e-07_-9.18296781e-07|-5.6000048|-1.21862108e-06_2.2242814e-07|-1|-3.56678418e-07
+	MODULE
+	{
+		name = ModuleCommand
+	}
+	MODULE
+	{
+		name = ModuleSAS
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		currentSubtype = Enabled
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = LAUNCH_TOWER
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SLE.SS.OLIT.Core_2800022536
+	partName = Part
+	persistentId = 2800022536
+	pos = 55.0289108,-3.18365154,2.79618055
+	attPos = 0,0,0
+	attPos0 = 55.0289108,-3.18365154,2.79618055
+	rot = -5.51727381e-08,0,-3.024282e-07,1
+	attRot = -5.51727381e-08,0,-3.024282e-07,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizScaled.SLE.SS.OLIT.Top_2800022537
+	link = DenizScaled.SLE.SS.OLIT.MZ_2800022538
+	attN = top,DenizScaled.SLE.SS.OLIT.Top_2800022537_0|117.56624|0_0|1|0_0|117.56624|0_0|1|0
+	attN = bottom,DenizScaled.SLE.SS.OLIT.Base_2800022535_9.18296781e-07|-0.0367195119|1.21862108e-06_2.34355375e-07|-1|3.11000173e-07_9.18296781e-07|-0.0367195119|1.21862108e-06_2.34355375e-07|-1|3.11000173e-07
+	attN = node_stack_connect01,DenizScaled.SLE.SS.OLIT.MZ_2800022538_-8.71435102|113.763266|-1.22472248_-0.990268064|-7.67189143e-08|-0.139173134_-8.71435102|113.763266|-1.22472248_-0.990268064|-7.67189143e-08|-0.139173134
+	attN = node_stack_connect02,Null_0_8.71435102|75.363267|1.22472248_0.990268056|-7.6718909e-08|0.139173193_8.71435102|75.363267|1.22472248_0.990268056|-7.6718909e-08|0.139173193
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = OLITSelector
+		currentSubtype = 7 Segments
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = railSwitch
+		currentSubtype = Enabled
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = panelSwitch
+		currentSubtype = Disabled
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = LAUNCH_TOWER
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SLE.SS.OLIT.Top_2800022537
+	partName = Part
+	persistentId = 2800022537
+	pos = 55.0289807,114.382588,2.7961685
+	attPos = 0,0,0
+	attPos0 = 55.0289807,114.382588,2.7961685
+	rot = 2.00479742e-07,0,-4.84782113e-07,1
+	attRot = 2.00479742e-07,0,-4.84782113e-07,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,Null_0_1.21862122e-06|16.7525676|-9.18296891e-07_0|1|0_1.21862122e-06|16.7525676|-9.18296891e-07_0|1|0
+	attN = bottom,DenizScaled.SLE.SS.OLIT.Core_2800022536_1.21862122e-06|0|-9.1829689e-07_3.64707825e-07|-1|5.11304959e-07_1.21862122e-06|0|-9.1829689e-07_3.64707825e-07|-1|5.11304959e-07
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = railSwitch
+		currentSubtype = Enabled
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = panelSwitch
+		currentSubtype = Disabled
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = LAUNCH_TOWER
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SLE.SS.OLIT.MZ_2800022538
+	partName = Part
+	persistentId = 2800022538
+	pos = 46.4500618,111.718462,1.58864348
+	attPos = 0,0,0
+	attPos0 = 46.4500618,111.718462,1.58864348
+	rot = -7.08806011e-08,-2.10497217e-07,-1.90661299e-07,1
+	attRot = -7.08806011e-08,-2.10497217e-07,-1.90661299e-07,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_stack_connect01,DenizScaled.SLE.SS.OLIT.Core_2800022536_-0.135432696|-1.1388428|-0.0171980646_0.990268123|-1.49011655e-07|0.139172717_-0.135432696|-1.1388428|-0.0171980646_0.990268123|-1.49011655e-07|0.139172717
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = MZPulleyToggle
+		currentSubtype = Disabled
+	}
+	MODULE
+	{
+		name = ModuleSLEAnimate
+		moduleID = TrolleyAnim
+		AnimatePosition = 4.615384615384616
+		ExtensionLimit = 48
+		ExtensionSpeed = 0.5
+	}
+	MODULE
+	{
+		name = ModuleSLEAnimate
+		moduleID = RightArmAnim
+		AnimatePosition = 4.647577092511013
+		ExtensionLimit = 52.75
+		ExtensionSpeed = 10
+	}
+	MODULE
+	{
+		name = ModuleSLEAnimate
+		moduleID = LeftArmAnim
+		AnimatePosition = 4.647577092511013
+		ExtensionLimit = 52.75
+		ExtensionSpeed = 10
+	}
+	MODULE
+	{
+		name = ModuleSLEAnimate
+		moduleID = Pushers1Anim
+		AnimatePosition = 10
+		ExtensionLimit = 20
+		ExtensionSpeed = 1
+	}
+	MODULE
+	{
+		name = ModuleSLEAnimate
+		moduleID = Pushers2Anim
+		AnimatePosition = 10
+		ExtensionLimit = 20
+		ExtensionSpeed = 1
+	}
+	MODULE
+	{
+		name = ModuleSLEController
+		moduleID = SLEArmController
+		OpenClose = True
+		OpenCloseLimit = 8
+		ExtensionLimit = 0
+		ExtensionSpeed = 10
+	}
+	MODULE
+	{
+		name = ModuleSLEController
+		moduleID = SLEPushersController
+		OpenClose = True
+		OpenCloseLimit = 20
+		ExtensionLimit = 0
+		ExtensionSpeed = 1
+	}
+	MODULE
+	{
+		name = ModuleSLEAnimate
+		moduleID = Stabilizers
+	}
+	MODULE
+	{
+		name = ModuleB9AssignUiGroups
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = Stbls2AxisToggle
+		currentSubtype = Single axis
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = TOWER_ARMS
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SLE.SS.OLIT.Base_2800022539
+	partName = Part
+	persistentId = 2800022539
+	pos = -33.3513517,-8.81394916,-1.69432208
+	attPos = 0,0,0
+	attPos0 = -33.3513517,-8.81394916,-1.69432208
+	rot = -3.57161738e-08,1,5.91299274e-08,0
+	attRot = -3.57161738e-08,1,5.91299274e-08,0
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizScaled.SLE.SS.OLIT.Core_2800022540
+	attN = top,DenizScaled.SLE.SS.OLIT.Core_2800022540_0|5.59359039|0_0|1|0_0|5.59359039|0_0|1|0
+	attN = bottom,DenizStarbaseMount_2800022534_-9.18296781e-07|-5.6000048|-1.21862108e-06_2.2242814e-07|-1|-3.56678418e-07_-9.18296781e-07|-5.6000048|-1.21862108e-06_2.2242814e-07|-1|-3.56678418e-07
+	MODULE
+	{
+		name = ModuleCommand
+	}
+	MODULE
+	{
+		name = ModuleSAS
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		currentSubtype = Enabled
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = LAUNCH_TOWER
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SLE.SS.OLIT.Core_2800022540
+	partName = Part
+	persistentId = 2800022540
+	pos = -33.3513512,-3.18363926,-1.69432021
+	attPos = 0,0,0
+	attPos0 = -33.3513512,-3.18363926,-1.69432021
+	rot = -1.52893861e-07,1,-9.63701592e-08,0
+	attRot = -1.52893861e-07,1,-9.63701592e-08,0
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizScaled.SLE.SS.OLIT.Top_2800022541
+	link = DenizScaled.SLE.SS.OLIT.MZ_2800022542
+	attN = top,DenizScaled.SLE.SS.OLIT.Top_2800022541_0|117.56624|0_0|1|0_0|117.56624|0_0|1|0
+	attN = bottom,DenizScaled.SLE.SS.OLIT.Base_2800022539_9.18296781e-07|-0.0367195119|1.21862108e-06_2.34355375e-07|-1|3.11000173e-07_9.18296781e-07|-0.0367195119|1.21862108e-06_2.34355375e-07|-1|3.11000173e-07
+	attN = node_stack_connect01,DenizScaled.SLE.SS.OLIT.MZ_2800022542_-8.71435102|113.763266|-1.22472248_-0.990268064|-7.67189143e-08|-0.139173134_-8.71435102|113.763266|-1.22472248_-0.990268064|-7.67189143e-08|-0.139173134
+	attN = node_stack_connect02,Null_0_8.71435102|75.363267|1.22472248_0.990268056|-7.6718909e-08|0.139173193_8.71435102|75.363267|1.22472248_0.990268056|-7.6718909e-08|0.139173193
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = OLITSelector
+		currentSubtype = 7 Segments
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = railSwitch
+		currentSubtype = Enabled
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = panelSwitch
+		currentSubtype = Disabled
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = LAUNCH_TOWER
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SLE.SS.OLIT.Top_2800022541
+	partName = Part
+	persistentId = 2800022541
+	pos = -33.3513859,114.382601,-1.69434378
+	attPos = 0,0,0
+	attPos0 = -33.3513859,114.382601,-1.69434378
+	rot = -3.35247774e-07,1,-3.52022639e-07,0
+	attRot = -3.35247774e-07,1,-3.52022639e-07,0
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,Null_0_1.21862122e-06|16.7525676|-9.18296891e-07_0|1|0_1.21862122e-06|16.7525676|-9.18296891e-07_0|1|0
+	attN = bottom,DenizScaled.SLE.SS.OLIT.Core_2800022540_1.21862122e-06|0|-9.1829689e-07_3.64707825e-07|-1|5.11304959e-07_1.21862122e-06|0|-9.1829689e-07_3.64707825e-07|-1|5.11304959e-07
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = railSwitch
+		currentSubtype = Enabled
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = panelSwitch
+		currentSubtype = Disabled
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = LAUNCH_TOWER
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SLE.SS.OLIT.MZ_2800022542
+	partName = Part
+	persistentId = 2800022542
+	pos = -24.7724678,111.718472,-0.486817958
+	attPos = 0,0,0
+	attPos0 = -24.7724678,111.718472,-0.486817958
+	rot = -4.11269928e-08,1,-8.06623276e-08,2.10497215e-07
+	attRot = -4.11269928e-08,1,-8.06623276e-08,2.10497215e-07
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_stack_connect01,DenizScaled.SLE.SS.OLIT.Core_2800022540_-0.135432696|-1.1388428|-0.0171980646_0.990268123|-1.49011655e-07|0.139172717_-0.135432696|-1.1388428|-0.0171980646_0.990268123|-1.49011655e-07|0.139172717
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = MZPulleyToggle
+		currentSubtype = Disabled
+	}
+	MODULE
+	{
+		name = ModuleSLEAnimate
+		moduleID = TrolleyAnim
+		AnimatePosition = 4.615384615384616
+		ExtensionLimit = 48
+		ExtensionSpeed = 0.5
+	}
+	MODULE
+	{
+		name = ModuleSLEAnimate
+		moduleID = RightArmAnim
+		AnimatePosition = 4.647577092511013
+		ExtensionLimit = 52.75
+		ExtensionSpeed = 10
+	}
+	MODULE
+	{
+		name = ModuleSLEAnimate
+		moduleID = LeftArmAnim
+		AnimatePosition = 4.647577092511013
+		ExtensionLimit = 52.75
+		ExtensionSpeed = 10
+	}
+	MODULE
+	{
+		name = ModuleSLEAnimate
+		moduleID = Pushers1Anim
+		AnimatePosition = 10
+		ExtensionLimit = 20
+		ExtensionSpeed = 1
+	}
+	MODULE
+	{
+		name = ModuleSLEAnimate
+		moduleID = Pushers2Anim
+		AnimatePosition = 10
+		ExtensionLimit = 20
+		ExtensionSpeed = 1
+	}
+	MODULE
+	{
+		name = ModuleSLEController
+		moduleID = SLEArmController
+		OpenClose = True
+		OpenCloseLimit = 8
+		ExtensionLimit = 0
+		ExtensionSpeed = 10
+	}
+	MODULE
+	{
+		name = ModuleSLEController
+		moduleID = SLEPushersController
+		OpenClose = True
+		OpenCloseLimit = 20
+		ExtensionLimit = 0
+		ExtensionSpeed = 1
+	}
+	MODULE
+	{
+		name = ModuleSLEAnimate
+		moduleID = Stabilizers
+	}
+	MODULE
+	{
+		name = ModuleB9AssignUiGroups
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = Stbls2AxisToggle
+		currentSubtype = Single axis
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = TOWER_ARMS
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizCargoArm_2800022543
+	partName = Part
+	persistentId = 2800022543
+	pos = 6.39008614e-07,115.439065,0.783438
+	attPos = 0,0,0
+	attPos0 = 6.39008614e-07,115.439065,0.783438
+	rot = -0.707106781,5.33850792e-08,-5.33850792e-08,0.707106781
+	attRot = -0.707106781,5.33850792e-08,-5.33850792e-08,0.707106781
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizPayloadRelease_2800022544
+	attN = bottom,Null_0_0|-0.88812|0_0|-1|0_0|-0.88812|0_0|-1|0
+	attN = top,DenizPayloadRelease_2800022544_0|1.32439|0_0|1|0_0|1.32439|0_0|1|0
+	attN = srfAttach,Null_0_0|-0.88812|0_0|-1|0_0|-0.88812|0_0|-1|0
+	srfN = srfAttach,DenizStarshipCargo_2800022501_0|-0.88812|0_0|-1|0_0|-0.88812|0_0|-1|0
+	MODULE
+	{
+		name = ModuleRoboticServoPiston
+		targetExtension = 0
+		currentExtension = 0
+		servoIsLocked = True
+		servoMotorIsEngaged = True
+		traverseVelocity = 0.48
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+	}
+	MODULE
+	{
+		name = ModuleResourceAutoShiftState
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = DenizTelescopicSleeve
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = CARGO_ARM
+	}
+}
+PART
+{
+	part = DenizPayloadRelease_2800022544
+	partName = Part
+	persistentId = 2800022544
+	pos = 6.39008614e-07,115.439065,-0.590952
+	attPos = 0,0,0
+	attPos0 = 6.39008614e-07,115.439065,-0.590952
+	rot = -0.707106781,5.33850792e-08,-5.33850792e-08,0.707106781
+	attRot = -0.707106781,5.33850792e-08,-5.33850792e-08,0.707106781
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizPayload.probeCoreHex.v2_2800022545
+	attN = top,DenizPayload.probeCoreHex.v2_2800022545_0|0.05|0_0|1|0_0|0.05|0_0|1|0
+	attN = bottom,DenizCargoArm_2800022543_0|-0.05|0_0|-1|0_0|-0.05|0_0|-1|0
+	MODULE
+	{
+		name = ModuleDecouple
+		stagingEnabled = False
+		ejectionForce = 0.1
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = PAYLOAD_RELEASE
+	}
+}
+PART
+{
+	part = DenizPayload.probeCoreHex.v2_2800022545
+	partName = Part
+	persistentId = 2800022545
+	pos = 6.39008614e-07,115.639065,-1.040952
+	attPos = 0,0,0
+	attPos0 = 6.39008614e-07,115.639065,-1.040952
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = fuelTankSmall_2800022546
+	link = dockingPort2_2800022548
+	link = batteryBankMini_2800022549
+	link = rtg_2800022550
+	link = commDish_2800022551
+	link = solarPanels4_2800022552
+	link = solarPanels4_2800022553
+	attN = bottom,fuelTankSmall_2800022546_0|-0.1875|0_0|-1|0_0|-0.1875|0_0|-1|0
+	attN = top,dockingPort2_2800022548_0|0.1875|0_0|1|0_0|0.1875|0_0|1|0
+	attN = cargo,DenizPayloadRelease_2800022544_0|-0.2|0.4_0|0|1_0|-0.2|0.4_0|0|1
+	MODULE
+	{
+		name = ModuleCommand
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+	}
+	MODULE
+	{
+		name = ModuleSAS
+	}
+	MODULE
+	{
+		name = ModuleKerbNetAccess
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = MechJebCore
+	}
+	MODULE
+	{
+		name = TrajectoriesVesselSettings
+	}
+	MODULE
+	{
+		name = DenizPayloadControls
+		ACTIONS
+		{
+			Equipment
+			{
+				actionGroup = Custom10
+			}
+			Engines
+			{
+				actionGroup = Custom07
+			}
+			Stop
+			{
+				actionGroup = Custom06
+			}
+			Parachutes
+			{
+				actionGroup = Custom05
+			}
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = MISSION_PAYLOAD
+	}
+}
+PART
+{
+	part = fuelTankSmall_2800022546
+	partName = Part
+	persistentId = 2800022546
+	pos = 6.39008614e-07,114.896315,-1.040952
+	attPos = 0,0,0
+	attPos0 = 6.39008614e-07,114.896315,-1.040952
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizCargoEngineMini_2800022547
+	link = rcsTankRadialLong_2800022554
+	link = RCSblock.01.small_2800022555
+	link = RCSblock.01.small_2800022556
+	link = RCSblock.01.small_2800022557
+	link = RCSblock.01.small_2800022558
+	attN = top,DenizPayload.probeCoreHex.v2_2800022545_0|0.55525|0_0|1|0_0|0.55525|0_0|1|0
+	attN = bottom,DenizCargoEngineMini_2800022547_0|-0.55525|0_0|-1|0_0|-0.55525|0_0|-1|0
+	attN = srfAttach,Null_0_0.625|0|0_1|0|0_0.625|0|0_1|0|0
+	MODULE
+	{
+		name = ModulePartVariants
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = fuelSwitch
+		currentSubtype = LF/O
+	}
+	MODULE
+	{
+		name = ModuleCryoTank
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizCargoEngineMini_2800022547
+	partName = Part
+	persistentId = 2800022547
+	pos = 6.39008614e-07,114.341065,-1.040952
+	attPos = 0,0,0
+	attPos0 = 6.39008614e-07,114.341065,-1.040952
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,fuelTankSmall_2800022546_0|0|0_0|1|0_0|0|0_0|1|0
+	attN = bottom,Null_0_0|-0.4|0_0|-1|0_0|-0.4|0_0|-1|0
+	MODULE
+	{
+		name = ModuleEnginesFX
+		stagingEnabled = False
+	}
+	MODULE
+	{
+		name = ModuleJettison
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = dockingPort2_2800022548
+	partName = Part
+	persistentId = 2800022548
+	pos = 6.39008614e-07,115.826565,-1.040952
+	attPos = 0,0,0
+	attPos0 = 6.39008614e-07,115.826565,-1.040952
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,Null_0_0|0.2828832|0_0|1|0_0|0.2828832|0_0|1|0
+	attN = bottom,DenizPayload.probeCoreHex.v2_2800022545_0|0|0_0|-1|0_0|0|0_0|-1|0
+	attN = srfAttach,Null_0_0|0|0_0|-1|0_0|0|0_0|-1|0
+	MODULE
+	{
+		name = ModuleDockingNode
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = lookSwitch
+		currentSubtype = Stripe
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = batteryBankMini_2800022549
+	partName = Part
+	persistentId = 2800022549
+	pos = 6.39008614e-07,115.739065,-0.440952
+	attPos = 0,0,0
+	attPos0 = 6.39008614e-07,115.739065,-0.440952
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,Null_0_0|0.1|0_0|1|0_0|0.1|0_0|1|0
+	attN = bottom,Null_0_0|-0.1|0_0|-1|0_0|-0.1|0_0|-1|0
+	attN = srfAttach,Null_0_0|0|0.3125_0|1|0_0|0|0.3125_0|1|0
+	srfN = srfAttach,DenizPayload.probeCoreHex.v2_2800022545_0|0|0.3125_0|1|0_0|0|0.3125_0|1|0
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = rtg_2800022550
+	partName = Part
+	persistentId = 2800022550
+	pos = 6.39008614e-07,115.739065,-1.640952
+	attPos = 0,0,0
+	attPos0 = 6.39008614e-07,115.739065,-1.640952
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,Null_0_0|0.3268025|0_0|1|0_0|0.3268025|0_0|1|0
+	attN = bottom,Null_0_0|-0.3268025|0_0|-1|0_0|-0.3268025|0_0|-1|0
+	attN = srfAttach,Null_0_0|-0.3268025|0_0|-1|0_0|-0.3268025|0_0|-1|0
+	srfN = srfAttach,DenizPayload.probeCoreHex.v2_2800022545_0|-0.3268025|0_0|-1|0_0|-0.3268025|0_0|-1|0
+	MODULE
+	{
+		name = ModuleGenerator
+	}
+	MODULE
+	{
+		name = ModuleCoreHeat
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = commDish_2800022551
+	partName = Part
+	persistentId = 2800022551
+	pos = 6.39008614e-07,115.839065,-0.590952
+	attPos = 0,0,0
+	attPos0 = 6.39008614e-07,115.839065,-0.590952
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = bottom,Null_0_0|-0.13|0_0|-1|0_0|-0.13|0_0|-1|0
+	attN = srfAttach,Null_0_0|-0.13|0_0|-1|0_0|-0.13|0_0|-1|0
+	srfN = srfAttach,DenizPayload.probeCoreHex.v2_2800022545_0|-0.13|0_0|-1|0_0|-0.13|0_0|-1|0
+	MODULE
+	{
+		name = ModuleDeployableAntenna
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = solarPanels4_2800022552
+	partName = Part
+	persistentId = 2800022552
+	pos = -0.699999361,115.739065,-1.040952
+	attPos = 0,0,0
+	attPos0 = -0.699999361,115.739065,-1.040952
+	rot = 0,-0.707106781,0,0.707106781
+	attRot = 0,-0.707106781,0,0.707106781
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	srfN = srfAttach,DenizPayload.probeCoreHex.v2_2800022545_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = solarPanels4_2800022553
+	partName = Part
+	persistentId = 2800022553
+	pos = 0.700000639,115.739065,-1.040952
+	attPos = 0,0,0
+	attPos0 = 0.700000639,115.739065,-1.040952
+	rot = 0,0.707106781,0,0.707106781
+	attRot = 0,0.707106781,0,0.707106781
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	srfN = srfAttach,DenizPayload.probeCoreHex.v2_2800022545_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = rcsTankRadialLong_2800022554
+	partName = Part
+	persistentId = 2800022554
+	pos = 6.39008614e-07,114.896315,-0.340952
+	attPos = 0,0,0
+	attPos0 = 6.39008614e-07,114.896315,-0.340952
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|0|-0.3125_0|0|-1_0|0|-0.3125_0|0|-1
+	srfN = srfAttach,fuelTankSmall_2800022546_0|0|-0.3125_0|0|-1_0|0|-0.3125_0|0|-1
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = RCSblock.01.small_2800022555
+	partName = Part
+	persistentId = 2800022555
+	pos = 6.39008614e-07,114.896315,-0.340952
+	attPos = 0,0,0
+	attPos0 = 6.39008614e-07,114.896315,-0.340952
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	srfN = srfAttach,fuelTankSmall_2800022546_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = ModulePartVariants
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+	}
+	MODULE
+	{
+		name = FXModuleAnimateRCS
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = RCSblock.01.small_2800022556
+	partName = Part
+	persistentId = 2800022556
+	pos = 0.700000639,114.896315,-1.040952
+	attPos = 0,0,0
+	attPos0 = 0.700000639,114.896315,-1.040952
+	rot = 0,0.707106781,0,0.707106781
+	attRot = 0,0.707106781,0,0.707106781
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	srfN = srfAttach,fuelTankSmall_2800022546_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = ModulePartVariants
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+	}
+	MODULE
+	{
+		name = FXModuleAnimateRCS
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = RCSblock.01.small_2800022557
+	partName = Part
+	persistentId = 2800022557
+	pos = 6.39008614e-07,114.896315,-1.740952
+	attPos = 0,0,0
+	attPos0 = 6.39008614e-07,114.896315,-1.740952
+	rot = 0,1,0,0
+	attRot = 0,1,0,0
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	srfN = srfAttach,fuelTankSmall_2800022546_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = ModulePartVariants
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+	}
+	MODULE
+	{
+		name = FXModuleAnimateRCS
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}
+PART
+{
+	part = RCSblock.01.small_2800022558
+	partName = Part
+	persistentId = 2800022558
+	pos = -0.699999361,114.896315,-1.040952
+	attPos = 0,0,0
+	attPos0 = -0.699999361,114.896315,-1.040952
+	rot = 0,0.707106781,0,-0.707106781
+	attRot = 0,0.707106781,0,-0.707106781
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|0|0_1|0|0_0|0|0_1|0|0
+	srfN = srfAttach,fuelTankSmall_2800022546_0|0|0_1|0|0_0|0|0_1|0|0
+	MODULE
+	{
+		name = ModulePartVariants
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+	}
+	MODULE
+	{
+		name = FXModuleAnimateRCS
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+}

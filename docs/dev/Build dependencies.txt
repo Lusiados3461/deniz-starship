@@ -1,0 +1,65 @@
+PROJECT BUILD DEPENDENCIES
+
+Game: Steam Kerbal Space Program 1.12.5 with Making History and Breaking Ground.
+Native craft dependencies: SEP, Starship Launch Expansion, B9PartSwitch, Waterfall, Shabby, Resurfaced, CommunityResourcePack, SpaceDust, StationPartsExpansionRedux. kOS and MechJeb support are included in the custom command modules.
+The clamshell references the six official Tundra Exploration 5.1.0 cargo assets installed in the personal game folder; the project does not distribute them.
+KJR Next 4.2.28 reinforces connections and supports the robotic arm.
+
+Custom plugin build: python3 -B work/starship-pack/build_plugin.py --clean
+Requires Python3.9+ and a .NET SDK (runtime alone is insufficient).
+Tested compiler: .NET SDK8.0.425, Roslyn C#7.3, existing /nostdlib flags.
+No NuGet restore or network needed: references come from the installed KSP1.12.5 app,
+Starship Expansion Project and Starship Launch Expansion DLLs. Optional development
+builds also require installed MechJeb2, Trajectories and Unity UI assemblies.
+
+SDK lookup: --dotnet-root <root> or DENIZ_KSP_DOTNET_ROOT (explicit values are
+strict; invalid values fail), then work/starship-pack/dotnet, tools/dotnet,
+PATH dotnet, finally the historical external SDK for compatibility:
+/Users/denizuzel/Documents/Codex/2026-10-02/i-x20-2/work/starship/dotnet
+Install/extract the SDK into either local directory to remove that dependency.
+The host --list-sdks selects the highest stable installed SDK deterministically;
+--sdk-version 8.0.425 pins the tested version.
+Missing SDK, requested version, KSP installation or referenced assembly produces
+a clear failure before output creation/backup. PROJECT_PATHS.json supplies the
+Steam root; --game-root overrides it. Importing either build script is read-only.
+
+Default output: work/starship-pack/DenizStarship.dll. --out <dir>/DenizStarship.dll
+keeps assembly identity. Existing output is copied into a dated Backups folder
+before compilation. The builder writes only the specified DLL output file; it does
+not automatically install craft or restart the game. Default output is project-only;
+an explicitly chosen Steam --out path writes there and requires installation backups.
+Compile success is static evidence only; changed installed SHA requires native
+reload/preservation and relevant flight checks before PROJECT_PATHS acceptance.
+Normal play always uses --clean, excluding TestBridge. Optional bridge builds use
+build_validation_bridge.py --out <file.dll>, sharing the same SDK/reference checks;
+its DLL and outside-GameData flag must be archived before normal play.
+
+Craft/config generator: work/starship-pack/build_pack.py
+The geometry reader uses the GPL mu.py copy stored beside the source.
+Geometry clearance script needs NumPy; the bundled Codex Python runtime has it installed.
+
+Read PROJECT_LOG.md before running a build. The generator writes to the game installation as well as outputs/Starship Mission Pack. Edited plugin or part definitions require a game restart before they take effect.
+Use --clean for the normal playable plugin. The temporary TestBridge is only for controlled development in the separate test save.
+
+5 OCT FLEET GENERATOR
+Normal generation now emits only 16 Tower Launch + Booster Practice; it still installs CFG/DLL/craft to Steam and requires backups and a clean DLL first.
+Safe static check: python3 -B work/starship-pack/build_pack.py --dry-run --out <folder-outside-Steam>. Dry mode requires an explicit output folder and cannot install to Steam. Importing build_pack is read-only. Retired ship-only geometry remains available for explicit ZZ TEMP test craft; cleanup archives them into a per-run backup.
+Prepared cleanup: python3 -B work/starship-pack/archive_retired_blueprints.py (plan only). --apply requires Steam write access and performs backup/archive plus honest documentation; it does not verify VAB or fly anything.
+
+5 OCT GALLERY BUILDER (B5)
+Use this installed Codex runtime (ReportLab 4.4.9, pypdf 6.10.0):
+/Users/denizuzel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3.12
+Back up the source images.json, source HTML and Photo Album before rebuilding.
+Build command from this project:
+  /Users/denizuzel/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 -B work/starship-pack/build_gallery_album.py
+Default delivery is Photo Album/ (PDF, HTML, index, original PNGs and available telemetry).
+For review first, add --out <project-review-folder>; --validate-only checks the metadata without writing any files or importing ReportLab. Importing the builder is read-only. Missing ReportLab gives a clear error before delivery writes. Every photo requires date (YYYY-MM-DD) and status (flown/inserted-orbit/ground-test/static-only/failed). Dates/status print on every page and HTML entry; images retain their original aspect ratio. All 63 historical rows are dated 2026-10-04; the 59 ground-test rows include pad-area launches/hops and four inserted-orbit rows. No completed flown orbit is claimed.
+Visual QA used bundled Poppler: /Users/denizuzel/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm. Its default Fontconfig cache is outside the sandbox; use a task-local FONTCONFIG_FILE/cache pointing at /System/Library/Fonts and /Library/Fonts. See B5 evidence for the completed render and metadata provenance.
+
+6 OCT2026 ALBUM ENCODING
+Bundled ReportLab has no optional Caccelerators. Builder now uses standard lossless FlateDecode binary image streams (useA85False), avoiding pure-Python ASCII85 and its25%size wrapper. No originals modified; representative historical/finalA3PNG RGBbytes decoded from old/newPDFs matched exactly. Progress prints every50pages. Actual589pageA3delivery was already completed with the previousencoding and retained; futurebuilds use the fasterlossless path. Proof:work/starship-pack/evidence/2026-10-05-A3-orbital-return/binary-encoding-check/result.json.
+
+6 OCT2026 CAPTION LAYOUT
+Builder preflights every title/caption before image decoding. Existing dynamic caption height supports five-line captions without cropping, preserving a minimum360point image region. Actual848page text QA and all197 new plus3 corrected historical pages visually reviewed. Evidence:work/starship-pack/evidence/2026-10-06-A5-drone-ship/album-review-848-050517/QA.json.
+
+8 OCT FINAL ALBUM CHECKS: prepare_campaign_album.py, review_album_pdf.py, deliver_campaign_album.py and verify_final_endpoint.py use the bundled Python3.12 command above. Full PDF/source/destination hashes use streaming hashlib.file_digest; backups/delivery use independent APFS clones with exact readback. Current actual-page rendering uses installed pypdfium2, preserving original captured pixels/aspect ratios; previous Poppler evidence remains historical. verify_final_endpoint.py --preparation <record.json> is passive and sends no game controls. Legacy final_verify.py performs live fleet operations and must not be used with the helper disabled. Exact installed craft inventory, not only a list of retained hashes, is required at the endpoint.

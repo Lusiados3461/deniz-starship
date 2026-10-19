@@ -1,0 +1,83 @@
+DENIZ STARSHIP — TOWER CATCH
+
+Recorded clean-build procedure, 9 October 2026. Read PROJECT_STATUS.md and the current C1
+phase results for acceptance. Candidate11 full return/catch/support/reload and native45part/two-live-crew
+Main merge passed. Pad33 support passed in a same-branch continuation after
+an initial motion guard failure and2.56normal seconds of natural settling.
+Both current powered releases passed with zero exceptions. All16VAB/staging/cargo
+and9bounded separation/8payload cases passed within their stated procedures.
+Clean11 is accepted and helper-free KSP remains open; the3136-page album is delivered
+with all415 new pages personally reviewed. Post-restart menu image is unavailable; native startup is verified.
+
+Use Deniz Starship Missions Test for the recorded procedure. Start with a
+Tower Launch craft. The retained 17 blueprints keep catch brackets disabled.
+The existing support towers gain a separate right-click catch menu; keys 1–0
+keep their existing cargo, legs, engines and payload functions.
+
+Before launch:
+1. Right-click Super Heavy. Set Bracket angle to 75 degrees, then click Enable
+   catch brackets. Set the angle before enabling; the enabling operation applies
+   it to the actual brackets. The two gold brackets add 0.8 tonnes when enabled.
+2. Leave the original support arms closed at their launch position (8-degree
+   gap), wait for them to settle, then use Calibrate catch on pad on the nearby
+   tower. Calibration must report that the target was measured from both rails.
+3. Keep the other tower disarmed. Use the normal launch staging; the mount
+   waits for the arms to clear before releasing the stack.
+
+Return and capture:
+1. Fly the boostback and landing approach. Use the measured tower target,
+   upright attitude, precise RCS and a controlled hover with fuel in reserve.
+   The normal catch module controls the tower arms and attachment. It does
+   not fly the boostback or manage the pilot's throttle. Recorded development
+   flights use a separate temporary input pilot and native MechJeb attitude.
+2. Within range, right-click the calibrated tower and select Arm / abort tower
+   catch. It accepts exactly one uncrewed 11-part booster with brackets enabled.
+3. Before closing, it requires target error <=0.5m, relative speed <=0.2m/s,
+   spin <=0.01rad/s and upright angle <=3 degrees for one normal second.
+   Closing aborts if the wider motion limits are exceeded, or both contacts
+   fail to engage within 15 seconds. Do not force the booster into an arm.
+4. Capture requires both distinct bracket/rail contacts. When caught, reduce
+   throttle and disable approach guidance, RCS and SAS. Check Supported by
+   native attachment and the intact booster. Mount opening is blocked while
+   the booster is caught. The recorded support test uses zero engine thrust.
+   Let the newly joined assembly settle under normal physics, with controllers
+   off. The first heavy pad33 hold crossed its initial motion guard; it stayed
+   intact, settled naturally, then passed two separate30second strict holds.
+   Do not treat a paused contact frame as a sustained-support result.
+
+Saved catches and release:
+A saved catch retains the measured contact node and native reversible joint.
+The catch toggle starts disarmed after reload. Use Safe release caught booster
+only after establishing upward engine thrust. Release is refused below 1.05
+times the booster weight. Throttle remains a pilot input; clear the arms under
+power after release. The stock-style focus switch neutralises controls;
+re-establish manual throttle promptly after switching to the booster and
+keep upward power while clearing the arms. Do not use ordinary tower staging
+to release a catch. A paused frame can retain cached thrust/throttle: verify
+a later normal-physics reading before treating an input cut as zero thrust.
+
+The joint follows the installed stock grappling lifecycle, including current
+pose preservation, pristine-coordinate synchronization and a native locked
+pivot. It does not move the booster to a desired flight target or assign its
+velocity, orbit, fuel or clock. Actual contact and sustained normal physics
+must pass independently; an initially joined paused graph is not a completed
+catch. Earlier failed trials and their original photographs remain preserved.
+
+Latest records:
+work/starship-pack/evidence/2026-10-09-C1-tower-catch/RECORD.md
+PROJECT_STATUS.md
+
+RECORDED BOUNDS,9OCTOBER
+Full32 original20 catch:30.72normal seconds unpowered, then30.28after native
+reload; native FMRS-combined ground graph held30.24seconds and original25ship
+retained Jeb and Bill in its recorded orbit. Release cleared5.019m/EXC0.
+Pad33 continued strict support:30.76seconds, then30.60after native reload;
+release cleared5.092m/EXC0. A separate0.64normal-second cut verified native
+throttle/thrust0 before campaign restoration. Earlier failures remain.
+
+Native recorded sources and FMRS replay restore their saved clock/fuel.
+These checks prove their recorded phases; they are not an uninterrupted
+two-vessel fuel-budget run. The combined Main merge was checked through the
+temporary guarded validation workflow; ordinary user-operated post-catch
+FMRS Main persistence was not separately tested. Native branch quicksave
+reload support was tested. No normal one-button boostback autopilot is built.

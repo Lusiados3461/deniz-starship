@@ -1,0 +1,933 @@
+ship = D Booster Practice
+version = 1.12.5
+description = Booster-only landing practice. Start with 5 percent methane and oxidizer for infinite-fuel practice. 3/G legs, 4 leg locks, 6 centre engines, 7 full engine cluster. Throttle manual. See the Mission Pack guide.
+type = VAB
+size = 85,145,32
+steamPublishedFileId = 0
+persistentId = 2800990000
+rot = 0,0,0,0
+missionFlag = Squad/Flags/default
+vesselType = Ship
+OverrideDefault = False,False,False,False
+OverrideActionControl = 0,0,0,0
+OverrideAxisControl = 0,0,0,0
+OverrideGroupNames = ,,,
+PART
+{
+	part = DenizSuperHeavy_2800990000
+	partName = Part
+	persistentId = 2800990000
+	pos = 0,41.6,0
+	attPos = 0,0,0
+	attPos0 = 0,41.6,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = DenizScaled.SEP.26.BOOSTER.CLUSTER_2800990001
+	link = DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800990002
+	link = DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800990003
+	link = DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800990004
+	link = DenizStarshipLegBooster_2800990005
+	link = DenizStarshipLegBooster_2800990006
+	link = DenizStarshipLegBooster_2800990007
+	link = DenizStarshipLegBooster_2800990008
+	link = DenizStarshipLegBooster_2800990009
+	link = DenizStarshipLegBooster_2800990010
+	attN = node_top,Null_0_0|34.3764313|0_0|1|0_0|34.3764313|0_0|1|0
+	attN = node_bottom,DenizScaled.SEP.26.BOOSTER.CLUSTER_2800990001_0|-34.5015763|0_-1.50995803e-07|-1|0_0|-34.5015763|0_-1.50995803e-07|-1|0
+	attN = node_gridfin_1,DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800990002_-4.46456397|27.7164268|0_-1|-2.98023224e-08|-2.98023233e-08_-4.46456397|27.7164268|0_-1|-2.98023224e-08|-2.98023233e-08
+	attN = node_gridfin_2,DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800990003_4.46456397|27.7164268|0_1|-2.98023224e-08|-2.98023233e-08_4.46456397|27.7164268|0_1|-2.98023224e-08|-2.98023233e-08
+	attN = node_gridfin_3,DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800990004_-5.96046528e-08|27.7164268|4.46456397_0|-1.68587397e-07|1_-5.96046528e-08|27.7164268|4.46456397_0|-1.68587397e-07|1
+	MODULE
+	{
+		name = ModuleCommand
+	}
+	MODULE
+	{
+		name = ModuleSAS
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		stagingEnabled = False
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = DockingSwitch
+		currentSubtype = Disabled
+	}
+	MODULE
+	{
+		name = ModuleB9AssignUiGroups
+	}
+	MODULE
+	{
+		name = MechJebCore
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_Fuel
+		currentSubtype = SEPLMOX
+	}
+	MODULE
+	{
+		name = ModuleCryoTank
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = rcsFX
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = ventFX
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleEngineStartupTimer
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = HSR
+	}
+	MODULE
+	{
+		name = TrajectoriesVesselSettings
+	}
+	MODULE
+	{
+		name = DenizStarshipControls
+		ACTIONS
+		{
+			ToggleCargo
+			{
+				actionGroup = Custom01
+			}
+			CargoLockAction
+			{
+				actionGroup = Custom02
+			}
+			ToggleLegs
+			{
+				actionGroup = Gear, Custom03
+			}
+			LegLockAction
+			{
+				actionGroup = Custom04
+			}
+			Reentry
+			{
+				actionGroup = Custom05
+			}
+			LandingEngines
+			{
+				actionGroup = Custom06
+			}
+			FlightEngines
+			{
+				actionGroup = Custom07
+			}
+			ArmAction
+			{
+				actionGroup = Custom08
+			}
+			ReleaseAction
+			{
+				actionGroup = Custom09
+			}
+			Equipment
+			{
+				actionGroup = Custom10
+			}
+			Cutoff
+			{
+				actionGroup = Abort
+			}
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_TANK
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.BOOSTER.CLUSTER_2800990001
+	partName = Part
+	persistentId = 2800990001
+	pos = -1.69417562e-07,5.97642191,0
+	attPos = 0,0,0
+	attPos0 = -1.69417562e-07,5.97642191,0
+	rot = 0,0,-7.54979013e-08,1
+	attRot = 0,0,-7.54979013e-08,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_top_Cluster,DenizSuperHeavy_2800990000_0|1.1220018|0_0|1|0_0|1.1220018|0_0|1|0
+	attN = node_bottom_Cluster,Null_0_-0.000306926709|-1.18762986|0.000215163018_0|-1|3.89414367e-07_-0.000306926709|-1.18762986|0.000215163018_0|-1|3.89414367e-07
+	MODULE
+	{
+		name = ModuleSEPEngineSwitch
+		selectedIndex = 0
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+	}
+	MODULE
+	{
+		name = ModuleSEPProceduralEngineGUI
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = DockingSwitch
+		currentSubtype = Disabled
+	}
+	MODULE
+	{
+		name = ModuleSEPPartSwitchAction
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = raptorclusterFull
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = raptorclusterMiddle
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = raptorclusterMiddle2
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		moduleID = raptorclusterInner
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = plumeSwitch
+		currentSubtype = default
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_ENGINES
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800990002
+	partName = Part
+	persistentId = 2800990002
+	pos = -4.44405158,69.3164268,1.03743911e-08
+	attPos = 0,0,0
+	attPos0 = -4.44405158,69.3164268,1.03743911e-08
+	rot = 2.52881088e-07,0,-1,0
+	attRot = 2.52881088e-07,0,-1,0
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_gridfin,DenizSuperHeavy_2800990000_0.0205123901|0|0_-1|8.42936843e-08|-2.52881088e-07_0.0205123901|0|0_-1|8.42936843e-08|-2.52881088e-07
+	attN = srfAttach,Null_0_0.096|0|0_-1|0|0_0.096|0|0_-1|0|0
+	MODULE
+	{
+		name = ModuleControlSurface
+	}
+	MODULE
+	{
+		name = ModuleCenterFollowTransform
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_CatchPoint
+		currentSubtype = Installed
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800990003
+	partName = Part
+	persistentId = 2800990003
+	pos = 4.44405158,69.3164268,0
+	attPos = 0,0,0
+	attPos0 = 4.44405158,69.3164268,0
+	rot = 0,1.41341706e-07,2.72456809e-08,1
+	attRot = 0,1.41341706e-07,2.72456809e-08,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_gridfin,DenizSuperHeavy_2800990000_0.0205123901|0|0_-1|8.42936843e-08|-2.52881088e-07_0.0205123901|0|0_-1|8.42936843e-08|-2.52881088e-07
+	attN = srfAttach,Null_0_0.096|0|0_-1|0|0_0.096|0|0_-1|0|0
+	MODULE
+	{
+		name = ModuleControlSurface
+	}
+	MODULE
+	{
+		name = ModuleCenterFollowTransform
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_CatchPoint
+		currentSubtype = Installed
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizScaled.SEP.26.BOOSTER.GRIDFIN_2800990004
+	partName = Part
+	persistentId = 2800990004
+	pos = -6.47918488e-08,69.3164268,4.44405158
+	attPos = 0,0,0
+	attPos0 = -6.47918488e-08,69.3164268,4.44405158
+	rot = -5.96045981e-08,-0.707106692,-1.19209277e-07,0.707106871
+	attRot = -5.96045981e-08,-0.707106692,-1.19209277e-07,0.707106871
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_gridfin,DenizSuperHeavy_2800990000_0.0205123901|0|0_-1|8.42936843e-08|-2.52881088e-07_0.0205123901|0|0_-1|8.42936843e-08|-2.52881088e-07
+	attN = srfAttach,Null_0_0.096|0|0_-1|0|0_0.096|0|0_-1|0|0
+	MODULE
+	{
+		name = ModuleControlSurface
+	}
+	MODULE
+	{
+		name = ModuleCenterFollowTransform
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		moduleID = SEP_CatchPoint
+		currentSubtype = Installed
+	}
+	MODULE
+	{
+		name = ModuleB9DisableTransform
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+	}
+}
+PART
+{
+	part = DenizStarshipLegBooster_2800990005
+	partName = Part
+	persistentId = 2800990005
+	pos = 0,8,4.4
+	attPos = 0,0,0
+	attPos0 = 0,8,4.4
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	srfN = srfAttach,DenizSuperHeavy_2800990000_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLegBooster_2800990006
+	partName = Part
+	persistentId = 2800990006
+	pos = 3.81051178,8,2.2
+	attPos = 0,0,0
+	attPos0 = 3.81051178,8,2.2
+	rot = 0,0.5,0,0.866025404
+	attRot = 0,0.5,0,0.866025404
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	srfN = srfAttach,DenizSuperHeavy_2800990000_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLegBooster_2800990007
+	partName = Part
+	persistentId = 2800990007
+	pos = 3.81051178,8,-2.2
+	attPos = 0,0,0
+	attPos0 = 3.81051178,8,-2.2
+	rot = 0,0.866025404,0,0.5
+	attRot = 0,0.866025404,0,0.5
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	srfN = srfAttach,DenizSuperHeavy_2800990000_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLegBooster_2800990008
+	partName = Part
+	persistentId = 2800990008
+	pos = 0,8,-4.4
+	attPos = 0,0,0
+	attPos0 = 0,8,-4.4
+	rot = 0,1,0,0
+	attRot = 0,1,0,0
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	srfN = srfAttach,DenizSuperHeavy_2800990000_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLegBooster_2800990009
+	partName = Part
+	persistentId = 2800990009
+	pos = -3.81051178,8,-2.2
+	attPos = 0,0,0
+	attPos0 = -3.81051178,8,-2.2
+	rot = 0,0.866025404,0,-0.5
+	attRot = 0,0.866025404,0,-0.5
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	srfN = srfAttach,DenizSuperHeavy_2800990000_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_LEG
+	}
+}
+PART
+{
+	part = DenizStarshipLegBooster_2800990010
+	partName = Part
+	persistentId = 2800990010
+	pos = -3.81051178,8,2.2
+	attPos = 0,0,0
+	attPos0 = -3.81051178,8,2.2
+	rot = 0,0.5,0,-0.866025404
+	attRot = 0,0.5,0,-0.866025404
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Grandparent
+	rigidAttachment = True
+	istg = -1
+	resPri = 0
+	dstg = -1
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = srfAttach,Null_0_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	srfN = srfAttach,DenizSuperHeavy_2800990000_0|1.7086248|0.2530384_0|0.5735765|0.819152_0|1.7086248|0.2530384_0|0.5735765|0.819152
+	MODULE
+	{
+		name = ModuleWheelBase
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		stateString = Retracted
+		position = 0
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+	}
+	MODULE
+	{
+		name = ModuleWheelBogey
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+	}
+	MODULE
+	{
+		name = FMRS_PM
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		nameTag = BOOSTER_LEG
+	}
+}

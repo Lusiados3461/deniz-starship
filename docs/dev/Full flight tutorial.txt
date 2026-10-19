@@ -1,0 +1,344 @@
+DENIZ STARSHIP — FULL FLIGHT TUTORIAL
+Checked against the installed craft controls and Mac key bindings, 4 October 2026.
+
+This applies to the supported Deniz Starship fleet: 16 Tower Launch designs plus Deniz Super Heavy - Booster Practice. Full Stack and Ship Only project variants were retired and archived on 5 Oct 2026; Steam removal and all16 VAB/ground acceptance passed (Task1). Temporary ship-only tests use ZZ TEMP blueprints and archive them after the task. Use stock Kerbin unless you have deliberately installed a different planetary scale.
+
+VALIDATION STATUS
+Current acceptance through9October2026: Task1 all16 VAB/ground and A0 all16 short Tower Launch flights passed; Empty/Hubble actual orbits and flown-orbit cargo deployments passed. A3 orbital return and A4 manual booster return passed with their disclosed saved retries; A5 required booster barge support passed, optional Starship deck landing failed. A6 compact docking/conserved transfer/undock passed. A7 Mun landing/rover/return entry passed but stable Kerbin standing remains PARTIAL; A8 required Duna deployment/standing passed with a disclosed terminal retry, optional fuel-limited return unflown. A9 cabin EVA/ladder/days passed; complete tower route remains PARTIAL. A10 measurements passed, max-Q performance was poor. B3 corrected coast release/clearance guard/basic telescope RCS and B4 clean rebuild passed within recorded bounds. Automatic BoosterGuidance landing, contact-free booster separation, precise telescope pointing and full-throttle arm loads remain unaccepted. C1 tower capture/support/reload and powered release passed the recorded9October development phases; all16VAB/staging/cargo and9bounded separation/8payload cases passed within recorded procedures. Clean11 is accepted; the3136-page actual-photo album is delivered with all415 new pages personally reviewed. See C1 tower catch.txt for the tested procedure and replay/settling/FMRS limits.
+Use the dated verified procedures and original evidence below; suggested training numbers are not a proven automatic flight profile. Current phase evidence and every preserved failure are listed in PROJECT_STATUS.md and TEST RESULTS.txt.
+
+1. CHOOSE THE RIGHT CRAFT
+Start with Deniz Starship 01 - Empty - Tower Launch to learn the whole stack. Use Deniz Starship 02 - Hubble Telescope - Clamshell - Tower Launch once you understand deployment.
+Tower Launch has the twin towers and moving support arms. Historical Full Stack and Ship Only versions are retired; they remain recoverable from Backups. All missions use Tower Launch. A test driver may explicitly generate a ZZ TEMP ship-only variant for hops or inserted-orbit regression, then archive it at the endpoint.
+Use the dedicated Deniz Starship Missions Test save for practice. Assign two crew to the carrier cabin in the VAB Crew tab. Assign extra crew to payload seats only if that mission needs them; a carrier crew member is not automatically assigned to a separate payload cabin.
+
+2. KNOW THE CONTROLS
+Number row:
+1 = toggle cargo open/closed.
+2 = toggle cargo lock.
+3 or G = toggle carrier landing legs.
+4 = toggle carrier leg lock.
+5 = toggle carrier entry/landing flap preset.
+6 = carrier landing engines: ship sea-level engines, booster centre cluster.
+7 = carrier flight engines: all ship engines, full booster cluster.
+8 = toggle deployment arm extension/retraction.
+9 = release cargo only while coasting, actual main thrust zero/RCS off, bay fully open and arm fully extended/locked. Main-thrust release is refused without changing throttle.
+0 = deploy active vessel's equipment. Aboard Starship this does not unfold the attached cargo's equipment.
+
+After switching to a released payload:
+7 = activate its engine, if fitted.
+6 = shut its engine down.
+5 = arm/deploy its parachutes, if fitted.
+0 = deploy its equipment.
+G = payload legs, where fitted.
+B = rover brakes.
+These payload engine/parachute commands are blocked while cargo is still attached.
+
+Flight keys on this Mac:
+Space = next stage in staging mode.
+T = SAS; R = RCS; U = lights.
+W/S = pitch; A/D = yaw; Q/E = roll.
+Shift = increase throttle; left Control = decrease throttle.
+Z = full throttle; X = zero throttle.
+Return = fine controls, with blue control indicators. This is the current saved binding.
+H/N = forward/back translation; I/K = down/up; J/L = left/right.
+O/P, or [ and ], switch nearby vessels.
+F5 = quicksave when allowed; hold F9 = quickload. Fn may be needed for Mac function keys.
+
+The number keys, 3/G, 4, 5 and 8 are toggles: read the status message rather than pressing repeatedly. Cargo starts locked; legs start unlocked. Wait for doors/legs to stop before locking. Engine keys 6/7 activate engines: set X before changing modes if you want them to remain at zero thrust.
+
+3. PREPARE FUEL AND LANDING MASS
+For ordinary missions, use the normal fuel load and plan reserves for separation, boostback, deorbit and landing. There is no proven reserve percentage for every payload.
+For your infinite-fuel practice, reduce both LqdMethane and Oxidizer by the same percentage in the VAB. Empty ship hops used approximately 20 percent; the separate booster hop used 5 percent. These are verified hop loads, not validated full-stack orbital settings for every payload. Heavier cargo needs its own thrust-to-weight check.
+Infinite fuel preserves tank contents and their mass. A full booster can remain too heavy for its centre landing engines even though it cannot run out of fuel.
+TWR means thrust divided by weight. At maximum usable thrust, a local landing TWR below 1 cannot arrest vertical descent. Aim above 1.2, preferably nearer 1.5–2 for learning. Check at the relevant atmospheric pressure, with the intended engines selected. If mode 6 is insufficient, keep more engines active with 7, use a lighter starting load, or burn down with infinite fuel disabled before attempting the return.
+
+4. PREPARE THE PAD AND DISPLAYS
+Cargo closed and locked. Arm retracted. Legs retracted. Cargo panels folded. Throttle zero. SAS attitude hold on. RCS initially off unless needed.
+In Kerbal Engineer, display apoapsis, periapsis, time to apoapsis, altitude above terrain, vertical speed, horizontal speed, TWR and landing/suicide-burn readouts where available. Verify selected engines and atmospheric settings when interpreting a stage TWR estimate. Sea-level altitude is not clearance above the ground.
+Arm FMRS on the pad if you want both Starship and Super Heavy recovered. It records controllable separated stages so you can finish the main flight, then replay booster recovery from separation. This avoids trying to pilot both falling vehicles at once.
+Disable Booster Guidance, MechJeb Landing Guidance, Translatron and competing attitude controllers before ascent.
+
+5. LAUNCH AND REACH ORBIT
+Suggested first orbit: 150 km, inclination 0 degrees from KSC. This gives a roomy equatorial orbit for deployment. Due-east heading is 90 degrees.
+If using MechJeb Ascent Guidance, use Classic Ascent Profile as a starting point:
+- Orbit altitude 150 km; inclination 0 degrees.
+- Auto-stage OFF; hot staging OFF; Auto-warp OFF; Auto-deploy solar panels OFF.
+- Skip circularization OFF.
+- Edit Ascent Path: turn start around 1 km, turn end around 45 km, turn shape 40 percent, final angle 0 degrees.
+- Start with an AoA limit around 5 degrees and an acceleration limit around 20 m/s². These are suggested settings for tuning, not tested fleet presets. If it tumbles, reduce the turn demand and keep its nose closer to prograde.
+
+Initially launch manually. Apply enough throttle to lift with a gentle positive acceleration; a liftoff TWR around 1.3–1.6 is a useful aim. Light infinite-fuel loads may need far less than full throttle. Press Space ONCE.
+Tower Launch starts Super Heavy, opens the support arms, then releases the mount after the arms clear. Wait several seconds. Do not press Space again to make it release faster. If the mount reports that the arms did not clear, stop thrust and inspect the tower rather than forcing separation.
+After clearing the tower, engage Ascent Guidance if using it. It controls steering AND throttle during ascent. Leave staging manual.
+
+For manual ascent, rise vertically clear of the stand, then gradually pitch toward heading 90. Make small turns and stay close to surface prograde in dense air. Continue building horizontal speed as altitude increases. Use apoapsis, not current altitude, to decide when to stop the climb. Reduce/cut thrust when apoapsis approaches 150 km, coast toward it, then burn orbital prograde around apoapsis until periapsis is safely above 70 km. Aim for roughly 150 x 150 km. High altitude alone does not make an orbit.
+
+6. SEPARATE THE BOOSTER
+Separate on a rising suborbital trajectory after it has provided enough lift for Starship to finish. Above the 70 km atmosphere is a convenient infinite-fuel training handoff; actual separation depends on fuel, velocity, payload and remaining ship capability. Do not use a fixed real-world elapsed time.
+If MechJeb controls throttle, disengage it briefly first. Press X, then Space ONCE for the second staging event. The booster separates and its engines shut down; Starship's engines activate. Let the vessels separate, then resume throttle/Ascent Guidance on Starship.
+Check FMRS has recorded the booster. Complete Starship's orbit first. Ensure both apoapsis and periapsis remain above the atmosphere. Save once stable and guidance is disengaged.
+
+7. RECOVER SUPER HEAVY WITH FMRS
+Use its FMRS vessel entry to jump back to separation. Confirm you control Deniz Super Heavy. O/P or brackets are useful for nearby switching but do not preserve both flights through time the way FMRS does. After landing the booster, use FMRS to return to the main flight and merge the recovery result.
+
+Manual boostback:
+- Keep throttle zero and enable SAS/RCS. Use full flight engines with 7 if needed.
+- Select the actual landing area in Trajectories. For learning, use clear flat ground near KSC rather than the occupied launch mount.
+- Turn to oppose your downrange motion, then burn while watching the predicted impact point. A controlled retrograde boostback initially cancels eastward speed; more burn can send you west toward KSC. Add crossrange correction only if the prediction needs it.
+- Stop when the predicted path reaches the desired area. Coast and point opposite surface velocity for atmospheric entry. Use small corrections and keep the heat/attitude under control.
+- Choose 6 for landing only when the centre cluster has sufficient TWR. Extend and lock legs with 3, wait, then 4. Use the manual landing method in step 11.
+
+Optional Booster Guidance:
+Its target and Trajectories' target are separate settings. Pick the location in Booster Guidance or target the drone ship and verify the copied coordinates. Target altitude must represent the terrain/deck elevation above sea level, not a desired hover height.
+Disable competing MechJeb autopilots and Smart A.S.S.; keep SAS available. Set the desired landing engines at zero throttle with 6, check TWR, and use Landing Burn's Set control to record them. Restore 7 for a stronger boostback if necessary. Enable Guidance while still on the outbound suborbital return, preferably above 70 km. Verify the selected phase is Boostback. If it skips boostback, do not assume the return has been done; investigate the phase before descent.
+It controls both throttle and steering. Check RCS is ON after enabling because this version may toggle its state. Let phases advance normally. Deploy and lock legs yourself. Disable Guidance before taking over manually. Its recovery on this custom Super Heavy is unvalidated, and it is not a Starship belly-flop controller.
+The tower catch module has a separate right-click arm/abort control and a powered safe-release control. Recorded9October C1 full-return and pad-hop contact/support/reload/release phases passed with disclosed saved-source/FMRS replay and initial pad-settling limits. The module closes and joins the arms; the pilot still flies boostback, hover and powered clearance. Read C1 tower catch.txt before enabling brackets or calibrating the tower. Clean11 and full fleet regression are accepted within recorded bounds; the3136-page actual-photo album is delivered with all415 new pages personally reviewed; ordinary post-catch FMRS menu/Main persistence remains untested.
+
+8. DELIVER ORBITAL CARGO
+Choose a stable orbit with periapsis above the atmosphere. Disable ascent/maneuver autopilots. Set X and stop rotation; use SAS attitude hold. Face the bay toward empty space, clear of nearby vessels. Avoid time warp while doors and robotics move.
+Cut actual main thrust to zero and turn RCS off. After a powered arm check, switch moving prograde/maneuver tracking OFF and use stock SAS Stability Assist to hold a fixed attitude; let rotation and flex settle before release, then retain that hold until stowed. Verified in flight9October: Heavy Tug powered refusal then coast release passed with3continuous normal seconds at angular speed<0.0002rad/s and zero thrust before release, contact0/all39originalparts. The prior continuously prograde-tracked retry recorded two gentle engine-to-clamshell contact times and remains failed for clearance. Evidence: work/starship-pack/evidence/2026-10-09-C1-tower-catch/payload-tug-powered-inertial-coast-03. This is the tested operational bound, not proof of every attitude or full-throttle arm load. Press2 to unlock,1 to open fully,8 to extend fully and lock,9 to release. Maintain coast until stowed; do not accelerate into the payload.
+Clamshell carriers retract, wait until the released payload clears the swept nose envelope, close and lock. Unknown/near payload keeps the nose open; manual close is also guarded. Stay nearby and verify completion before leaving physics range. After reload, right-click cargo and choose Prepare for return: stow and close to restart; saved guard references persist, coroutine continuation is unaccepted.
+Side-door carriers need 8 to retract, then 1 to close, then 2 to lock, with a wait after each moving step.
+Use O/P or brackets to control the released payload. Keep its engine off initially. Use gentle RCS translation to move clear; deploy large equipment with 0 after gaining clearance. Start an engine with 7 only once its exhaust and vehicle are clear. Key 6 stops the payload engine. F5 after a successful clean deployment.
+If it is meant to stay in orbit, verify the payload's own apoapsis/periapsis. Separation alone does not guarantee an independent stable orbit.
+
+9. USE EACH MISSION DESIGN
+Empty / Empty Large Bay: attach your own cargo to the release collar. Fold appendages, preserve a control point/power, keep the cabin accessible, and test a complete deployment on the ground before launch. A payload shape change invalidates the existing clearance test for that payload.
+Satellite: deploy in the required orbit; activate panels/antenna. Use its small engine for orbit adjustments.
+Hubble Telescope: deploy from the clamshell, translate clear, press 0, and use the SpaceDust telescope's right-click observation controls. The instrument optical hatch is separate from Starship's clamshell.
+Station Builder / Station Hub: deploy in orbit; use docking ports and RCS to join another station module. They are orbital modules, not surface landers.
+Refuelling / Orbital Fuel Depot: rendezvous and dock; transfer matching methane and oxidizer resources. Ordinary LiquidFuel does not fuel the Starship methalox engines.
+Mun Rover / Expedition Rover: deliver to the Mun or another suitable low-gravity destination. The small Mun rover has a descent engine. The Expedition Rover is a wheeled vehicle and requires a delivery plan; do not assume it has the same self-landing hardware.
+Duna Outpost / Surface Base: deliver to a suitable surface with the payload's engine, legs and any fitted parachutes. Check local TWR. The large base is intended for low-gravity delivery; its engine-only Kerbin landing is not established.
+Crew Rescue / Crew Shuttle: assign/transfer crew to the correct separate seats; rendezvous with the rescue target or use the shuttle as a lander. Check engines/fuel for that payload's destination and return.
+Asteroid Tug / Heavy Asteroid Tug: rendezvous, match relative velocity, arm its grappling claw in the right-click menu, approach slowly and capture. A captured asteroid's mass changes handling and TWR enormously.
+
+10. DOCK, REFUEL OR TRAVEL TO THE MUN/DUNA
+For rendezvous, target the vessel, match orbital planes if needed, plan the encounter, then match target-relative velocity at closest approach. MechJeb Maneuver Planner supplies these node types. Target retrograde is useful for matching another spacecraft's velocity; it does not guide a surface landing.
+Near docking, right-click the Starship tank and select RCS: docking precision. Enable R and Return fine controls. Set the target docking port as target and your own port as the control point. Use short H/N/I/J/K/L taps. Aim below about 0.2 m/s near contact. Confirm docking before opening resource transfer menus. Use the saved left-Alt modifier as applicable to resource selection, or the resource panel.
+Mun: start from the stable Kerbin orbit, target the Mun and use a suitable moon-transfer node (Bi-Impulsive/Hohmann transfer, depending on installed menu). Check it actually predicts a Mun encounter before execution. Correct the encounter to pass safely above terrain, then capture with a retrograde burn at periapsis. Circularize before starting a separate surface descent. The Mun has no atmospheric braking or useful parachutes: land with engines using local TWR and terrain altitude. Return planning can use Return from a moon.
+Duna: plan a transfer at a suitable window with Advanced transfer to another planet; confirm an encounter, perform a course correction, then use a controlled capture into a safe orbit. Engine capture is a straightforward infinite-fuel practice option. For surface descent, the atmosphere is thin: parachutes may help, but retain engine capability and do not rely on a fixed Kerbin deployment altitude. Plan ascent and refuelling/reserves if the carrier is returning.
+For surface cargo release, first land Starship upright on level ground with a clear outward bay path. Transfer payload crew before release. Extend the arm, release, immediately switch to the payload and control its engine if fitted; otherwise provide a safe lowering/delivery method. Do not drop the wheeled Expedition Rover from the full bay height onto Kerbin and expect a gentle landing.
+Full docking and Mun/Duna delivery have not been flight-tested for this fleet.
+
+11. RETURN AND LAND STARSHIP MANUALLY
+For controlled hop tests, first learn with a temporary ZZ TEMP ship-only blueprint and an empty ship; archive the blueprint after the task. An upright powered return teaches braking; a full belly-flop/flip is a further unvalidated flight exercise.
+Before deorbit, retract the arm, close and lock cargo, retract vulnerable external equipment through its part menu, and check engine mode 6 provides adequate landing TWR. Set your landing location in Trajectories. Its prediction depends on the attitude/descent profile and current vessel configuration; parachutes and future staging are not predicted.
+From orbit, point orbital retrograde and make a small deorbit burn. A periapsis around 30–40 km can be a training starting point from low Kerbin orbit, but tune the burn using the atmospheric prediction rather than assuming this guarantees KSC. Perform the burn early enough that the path intersects the desired longitude. Stop and watch the prediction; later small burns can shorten a path that overshoots. Make crossrange corrections while there is time and altitude.
+Use a shallow, controlled entry and watch heating. For upright entry, configure a retrograde descent prediction and hold surface retrograde once entering the atmosphere. Orbital retrograde and surface retrograde are different in a rotating atmosphere. Smart A.S.S. SURF -> SVEL- can hold the latter while you operate throttle. It points opposite surface motion; it does not itself steer to the landing target. Avoid competing attitude controllers.
+For belly-first practice, press 5 and verify Entry flap preset, manually present the heat-shielded side to airflow and configure Trajectories for that actual orientation. The key changes flap angles; it does not pitch the ship horizontal or execute a flip. Begin practicing the upright transition several kilometres high with a generous stopping margin. Exact flip timing depends on descent speed, mass, thrust and rotation time and is not established for this craft.
+For the powered final approach, disable ascent/landing/Booster Guidance throttle control. At zero throttle select 6, press 5 if needed for Landing flap preset, extend legs with 3 and lock with 4 after extension. Arrest sideways motion while high enough, then finish upright; once upright, SAS attitude hold avoids chasing a wandering retrograde marker at very low speed.
+Use altitude ABOVE TERRAIN, vertical speed and usable TWR to start braking early. KER's landing estimate is an aid, not a guaranteed trigger. Do not use one fixed burn altitude for every payload. A simplified upright stopping distance is v²/[2*g*(TWR-1)], using local full-thrust TWR and downward speed, ignoring changing drag/mass and turn time. At 150 m/s on Kerbin, TWR 2 needs roughly 1.15 km to stop even before margin; TWR 1.5 needs roughly 2.3 km. Start well above this and account for time spent turning.
+Burn firmly to reduce a fast descent, then lower throttle before vertical speed reaches zero. The approximate upright hover setting is 1/TWR: TWR 2 corresponds to about 50 percent throttle. This is only a starting estimate; use the actual speed trend. Aim roughly 5–10 m/s down with comfortable ground clearance, 1–3 m/s near the final tens of metres, then below about 1 m/s for contact. Keep sideways speed very low. Cut thrust with X only when the legs have contacted and the vehicle has settled. Leave legs locked; reduce unnecessary high-power RCS corrections after touchdown.
+Choose level ground near KSC for the first return. Accuracy improves with repeated entries using the same fuel mass, cargo and descent attitude. Infinite fuel allows early braking, but provides no protection from heating, impact or loss of control.
+
+12. QUICK PROBLEMS
+Door does not open: cargo locked; use 2 once and verify Unlocked before 1.
+Door cannot close: arm still extended; retract and wait. Never force it through cargo.
+9 does nothing: bay not fully open or arm not fully extended; read the status.
+Legs do not move: unlock with 4, then use 3/G. Lock only after motion stops.
+Engine mode causes a sudden leap: throttle was already raised; X before 6/7.
+Maximum throttle cannot stop falling: insufficient local TWR, wrong engines, severe tilt, or no propellant. More throttle cannot fix TWR below 1.
+Throttle changes without input: ascent, landing, Booster Guidance or another throttle controller is engaged. Disable it before manual landing.
+Cargo engine does not start: still attached, wrong active vessel, or that payload has no engine.
+Target is selected but landing misses: attitude hold is not trajectory correction; check actual impact prediction and the selected guidance phase/coordinates.
+Fine controls do not react to Caps Lock: current Mac binding is Return.
+Ship rebounds from landing: braking stayed too high or late; lower throttle toward a controlled slow descent before contact.
+
+REFERENCE SOURCES
+Pack-specific controls: installed DenizStarship source, generated craft action groups, existing START HERE guide and TEST RESULTS record.
+MechJeb ascent: https://github.com/MuMech/MechJeb2/wiki/Ascent-Guidance
+MechJeb maneuvers: https://github.com/MuMech/MechJeb2/wiki/Maneuver-Planner
+FMRS: https://github.com/linuxgurugamer/FMRS
+Booster Guidance: https://github.com/linuxgurugamer/BoosterGuidance/blob/main/README.md
+Trajectories: https://github.com/neuoy/KSPTrajectories
+
+5 OCT 2026 — BUILD / TEMPORARY BLUEPRINT PROCEDURE (TASK1/A0 CURRENT ACCEPTANCE RECORDED)
+Back up before normal generation: build_pack.py still installs to Steam without --dry-run.
+Safe dry generation: python3 -B work/starship-pack/build_pack.py --dry-run --out <project-test-output-folder>. It writes 16 Tower Launch + Booster Practice and a part CFG only to that folder; imports write no craft/config/plugin files. The 5 Oct dry outputs matched the installed originals byte for byte (evidence: work/starship-pack/evidence/2026-10-05-T1-blueprint-reduction/dry-comparison.json).
+Test drivers use Tower Launch, or explicitly create ZZ TEMP ship-only craft through temporary_craft.py. The helper checks fresh TestBridge state/test-save scope, and archives temporary craft, metadata and matching thumbnails on normal exit or exceptions. A hard process kill still needs a manual leftover check. The Tower Launch staging/cargo drivers have now passed all16 ground checks; the A0 driver passed all16 short-flight checks. Other temporary-ship drivers still need their own recorded flight validation.
+Steam write access verified; recoverable cleanup and all16 actual clean VAB checks PASS (Task1 evidence). A0 all16 actual short launch/separation checks PASS. A1 Empty/Hubble actual stable orbits PASS; see the verified5October procedures below.
+
+
+SHORT DISPLAY NAMES — 5 Oct 2026
+All 16 Starships include the booster and tower. C after the mission number means the closing large-payload clamshell. The other family uses side doors.
+File identifiers remain stable for the existing test scripts; KSP displays the short ship names below.
+D Starship 1 Empty = Deniz Starship 01 - Empty - Tower Launch.craft
+D Starship 1C Empty = Deniz Starship 01 - Empty Large Bay - Clamshell - Tower Launch.craft
+D Starship 2 Sat = Deniz Starship 02 - Satellite - Tower Launch.craft
+D Starship 2C Hubble = Deniz Starship 02 - Hubble Telescope - Clamshell - Tower Launch.craft
+D Starship 3 Rover = Deniz Starship 03 - Mun Rover - Tower Launch.craft
+D Starship 3C Rover = Deniz Starship 03 - Expedition Rover - Clamshell - Tower Launch.craft
+D Starship 4 Station = Deniz Starship 04 - Station Builder - Tower Launch.craft
+D Starship 4C Hub = Deniz Starship 04 - Station Hub - Clamshell - Tower Launch.craft
+D Starship 5 Refuel = Deniz Starship 05 - Refuelling - Tower Launch.craft
+D Starship 5C Depot = Deniz Starship 05 - Orbital Fuel Depot - Clamshell - Tower Launch.craft
+D Starship 6 Outpost = Deniz Starship 06 - Duna Outpost - Tower Launch.craft
+D Starship 6C Base = Deniz Starship 06 - Surface Base - Clamshell - Tower Launch.craft
+D Starship 7 Rescue = Deniz Starship 07 - Crew Rescue - Tower Launch.craft
+D Starship 7C Crew = Deniz Starship 07 - Crew Shuttle - Clamshell - Tower Launch.craft
+D Starship 8 Tug = Deniz Starship 08 - Asteroid Tug - Tower Launch.craft
+D Starship 8C Tug = Deniz Starship 08 - Heavy Asteroid Tug - Clamshell - Tower Launch.craft
+D Booster Practice = Deniz Super Heavy - Booster Practice.craft
+
+5 OCT COMPACT DISPLAY NAMES
+Visible names use D Starship + mission number + short payload label.
+C after the number means clamshell (example: D Starship 2C Hubble).
+D Starship 2 Sat is the compact satellite carrier; D Booster Practice is Super Heavy.
+Stable craft filenames remain unchanged for saved procedures and scripts.
+
+5 OCT VERIFIED GROUND PROCEDURE (NOT FLOWN)
+Evidence: work/starship-pack/evidence/2026-10-05-T1-resumed-acceptance/. All 16 current launchers: wait >10 simulated seconds for pad physics, check full fuel/two crew/zero throttle; 2 unlock, 1 open, wait fully open; 8 extend, wait >9.4 m and locked; extended arm blocks closing. PrepareReturn retracts arm then closes/locks bay with all parts retained. No payload release or ignition in this regression. Flown procedures remain suggested until A tasks record actual flights.
+
+A0 VERIFIED SHORT-FLIGHT PROCEDURE — 5 OCT 2026
+Verified in flight on2026-10-05, evidence: work/starship-pack/evidence/2026-10-05-A0-tower-fleet/. Full fuel/two crew; cargo closed/locked, payload equipment off, stock SAS stability assist, manual throttle. One Space starts booster/arm-clear/mount release; intended tower9parts remain on ground. Throttle cut before second Space; eleven-part booster separates and six ship engines start. Manual35percent ship burn produced positive thrust; final throttlezero/paused named checkpoints retain all carrier parts. All16 PASS. This is a short vertical check, not an orbit profile. At about2km ship full-throttle TWR is below1. A1 subsequently verified later booster separation at44.9–45.3km ASL; this is the recorded programmatic profile, not a separate human manual test.
+
+5 OCT A1 EMPTY — VERIFIED ACTUAL FLIGHT WITH MECHJEB ATTITUDE CONTROL
+Evidence: work/starship-pack/evidence/2026-10-05-A1-flown-orbit/.
+Control was programmatic throttle/staging and installed MechJeb2.14 SmartASS attitude; this does not prove a human manual flight or MechJeb Ascent Guidance.
+Full-fuel/two-crew Empty Tower Launch: vertical pitch90/heading90 at liftoff. Gradual east turn from1km, limit attitude departure from surface velocity while dynamic pressure exceeds3kPa. Retain booster above35km; actual clean separation MET96.46 at44.872km ASL/1009.95m/s, ship25parts/booster11/ground9.
+One-shot circularisation throttle dropped without a logged command; cause remains unknown. Pause/cut/save recorded, then SAME actual vessel resumed near194km with level-east SmartASS and continuous full-throttle commands. No orbit insertion, refill or time placement.
+Accepted orbit218.427x94.529km, inclination0.08625deg; stable60seconds unpowered, two crew/all25 ship parts,52.071% ship fuel and approximate4893.8m/s remaining carrier vacuum delta-v. This is a demonstrated orbit with an interruption, not a demonstrated smooth100km circular ascent.
+A corresponding human manual throttle procedure is suggested, not separately flown. Keep thrust on until actual periapsis exceeds80km; verify the map and cut throttle. Hubble subsequently passed a separately recorded actual orbit check; see below.
+
+5 OCT A1 HUBBLE — VERIFIED IN FLIGHT WITH MECHJEB ATTITUDE CONTROL
+Evidence:work/starship-pack/evidence/2026-10-05-A1-flown-orbit/attempt-04-hubble-map-closed/.
+Full fuel/two crew,56initial parts; tower release leaves47. MechJeb2.14 SmartASS attitude, direct programmatic throttle hold/staging; Ascent Guidance and BoosterGuidance unused, allcheatsFalse. This does not establish a human manual flight.
+Pitch90/heading90 initially; turn gradually after1km and stay near surface velocity while dynamic pressure exceeds3kPa. Actual maximum sampled q28.867kPa. Booster cutoff/stage when above35km with Ap>105km (or boosterfuel<10%); actual separationMET97.04s/ASL45258.4m/speed1023.25m/s. All36carrier/payloadparts retained; recorded spin0.0205rad/s.
+Ship burn raises Ap above103km, then coast. Circularisation timing used an approximate stock-Kerbin burn estimate, with level due-east SmartASS and maintained full-throttle commands until actual Pe>80km. Result124.755x101.715km, inclination0.09428deg;60seconds unpowered stability. Ship methane fraction54.944%, approximate remaining carrier vacuum delta-v4877.0m/s. Exact mass/Isp method and telemetry in result.json.
+Map transitions need normal simulation; skip camera targeting when taking a map capture. CLOSE the map before launching another craft. A launch from retained map-enabled state produced one preflight SpaceDust overlay exception; map-closed separate launch passedEXC0. External mod DLL unchanged; this is a tested workflow workaround, not a patch of SpaceDust.
+
+A2 HUBBLE — VERIFIED IN ACTUAL FLOWN ORBIT ON5OCT2026
+Evidence:work/starship-pack/evidence/2026-10-05-A2-flown-payload/hubble-attempt-01/. Zero throttle, stabilize;2unlock→1open fully→8arm extend beyond9.4m and lock→9release. Attached clamshell automatically retracts arm/closes/locks;25carrierparts/two crew and11independent telescope retained. Select telescope;0deploy equipment, stock SAS responds. Camera orientation changes need normal simulation before capture; paused angle changes can leave an old view. Programmatic action groups/MechJebKILLROT verified; no human manual or return flight implied.
+
+A2 SIDE-DOOR SATELLITE — VERIFIED IN ACTUAL FLOWN ORBIT ON5OCT2026
+Evidence:work/starship-pack/evidence/2026-10-05-A2-flown-payload/.
+Satellite used the recorded A1-style SmartASS attitude/programmatic throttle-hold/direct staging profile.59pad parts→50after tower→39in orbit. Stable actual ascent125.899×96.774km with60seconds unpowered observation, fuel55.456%; no inserted orbit/refill/time placement or AscentGuidance.
+In orbit, zero throttle/stabilize:2unlock→1open fully→8extend beyond9.4m/lock→9release.25carrier parts/two crew and14independent satellite parts retained; retraction is manual8, then1close, then2lock. Switch to payload; stock SAS responds,0deploy equipment, both solar panels savedEXTENDED. Carrier stowed and safe; no return flight implied. Camera changes complete at normal simulation before a paused capture; originals preserved.
+
+A3 DEORBIT SEGMENT ONLY — VERIFIED IN FLIGHT ON2026-10-05
+Evidence:work/starship-pack/evidence/2026-10-05-A3-orbital-return/deorbit-02/. ActualA2Satelliteorbit/25carrier/two crew: enableexistinghigh-powerRCS before the180deg returnturn (reactionwheel-only55sec attemptfailed); confirm RCSon in savedActionGroups. UseMechJebSurfacepitch0/heading270 atzero mainthrottle andwaitforsettling. Fullsix-engine westward burn producedsampledΔv1627.6m/s, reducedmainburnmass959.581→612.758t, shiftedTrajectories90degprofileprediction towardKSC. Postturnfuel28.496%; notarecommendeduniversaldeorbitΔv orprovenlandingreserve. Endattitudeposewasstillrotating0.515rad/s, so damping/precisioncontrol requirednext. Actualentry/flip/touchdown haveNOTyetbeenverified.
+
+5 OCT A3 RECORDED RETRY LIMITATION: reloading actual23km A3_BeforeDeepEntry caused flap detachment after1.44normal seconds even without changing flap/RCS/attitude targets. Do not use that atmospheric save as an intact-flight retry. Rootjoint/modulecauseunknown; third-party DLLs unchanged. Above-atmosphere retry/earlier braking is next and not yet validated. Earlier9.25km/921m/s entry braking started too late; failedsafeguard beforeimpact, no landing.
+
+A3 SATELLITE ORBITAL RETURN — VERIFIED IN FLIGHT6OCT2026
+Evidence:work/starship-pack/evidence/2026-10-05-A3-orbital-return/.
+Actual fresh current-hardware ascent127.694×102.530km and side-door deployment retained25carrier parts/two crew. No flight reload/placement/refill through deorbit, belly entry and six-engine brake. Final three-engine landing used a disclosed ordinary recorded3.330km return-checkpoint retry after a near-ground lateral-control failure; saved clock/resources restored normally.
+For this recorded empty Satellite carrier/profile only: normal orbital warp to longitude-93.9626deg/116.077km; Trajectories KSC target, descentprofile90deg; highRCS enabled, westward actual six-engine deorbit integrated delta-v1604.727m/s. Measured empirical prediction target1deg west compensated prior eastward drift. These targeting values are not universal for other loads/orbits.
+5entrypreset, highRCS KILLROT damps spin then precisionRCS settles75–105deg AoA; actual25km checkpoint AoA89.62/spin0.028. Peak heating ratio0.721, all25parts retained. Higher flip starts24.666km:5landingflaps/highRCS,7all6 available, west70deg attitude; full six-engine assist burn first sampled at20.248km and cuts at3.330km/V-76/H40.26,122.27t propellant. The earlier9.25km brake was too late.
+MechJeb global limitAcceleration must beFalse to allow manual full throttle (20m/s² threshold retained; global scope/backups recorded). The verified landing controller used programmatic throttle and MechJeb surface attitude, no Landing Guidance:6threeSL,3legs,4lock once allfour deployments full. Actual three-SL thrust first sampled at3.146km/radar3.081km. Descending lateralcourse correction, then cease positional chasing inside600m/1800m and brake horizontal velocity; hold≥88deg upright in final300m, softer verticalprofile/strongerfeedback final250m. This is the recorded automation procedure; human timing equivalents remain suggested, not flown.
+Actual intact landing629.8m frompad. Last airborne sample radar23.554m/V-0.514/H1.106m/s; next LANDED sample after0.920s. Exact collision speed was not sampled directly.30normal seconds upright with engines/RCS/MechJebattitudeoff;25parts/two crew/cargo stowed locked/legs extended locked, EXC0 in accepted return phases. Original failures/view limitations retained. Only13.63tpropellant remained: fuelmargin is limited and otherloads need their own measured profile.
+
+A4 SUPER HEAVY RETURN — VERIFIED IN FLIGHT6OCT2026
+Evidence:work/starship-pack/evidence/2026-10-06-A4-booster-return/.
+A4 PASS: the uncrewed, eleven-part booster landed 771.8 m from the pad and remained upright for 30.30 normal simulation seconds, with zero thrust and the legs extended and locked. Recorded boostback and entry reloads, and the actual course correction, are disclosed; prior fuel-exhaustion/contact failures retained. Upper-stage crew survival was not accepted for this branch.
+Actual sourceA3 pad-ascent pre-separation branch50parts/two carrier crew; normalstaging39carrier+11booster, switchto uncrewedbooster. Original FMRS switchcallbackduplicatecrewexception retained; noFMRSjump/BoosterGuidance/LandingGuidanceused. Directprogrammaticthrottle andSmartASS attitude: this is an automated testpilot, human timing equivalents remain suggested/notflown.
+Recordedwestwardboostback fullcluster35percent, complete main-thrust integral386.135m/s. Originalcutoff82.591km followed by native recordedcutoff retry andactualeastward24.784m/s correction at8percent; predictedlongitude offset isempiricalonly, not universal. Savedclock/resources restored normally; no arbitraryplacement/refill/timeassignment.
+Uprightentry/highRCS, normal5xballisticwarp aboveatmosphere,1xentry. Full33cluster required atthese masses: center-three mode alone cannot hover. Verifiedfirstpoweredlanding sample altitude12.237km. Pilotcoasts to measuredstoppingdistance V²/[2(0.85T/m−g)]+1500m, curveddescent25m/s² feed-forward,4m/s²/80m/sapproach below3500m,0.6m/s² final400m. Actualtwo-axislateralcorrection atmax90m/s, then stoppositionchasing within650m orbelow700m. Normal1200m altitudehold permits lateralbraking at≥55deg untilH<3m/s; strongRCSthroughhold/precisionafterclear. Then finaldescent holds≥89deg below300m. Legs action3/full extension/lock4; strong RCS during the horizontal hold, precision after horizontal speed falls below3m/s; engines, RCS and attitude control off after contact. These are measuredprofile/controller details, not universal manual timings.
+Coordinates-0.027375917480099887,-74.534098267693281; lastairborne radar41.339m/V-5.357/H0.081m/s, nextLANDED after0.740s. Exactcollision speed not sampled directly. Finalpropellantfraction0.000percent, uprightstanding30.30seconds/all11parts. Originalearlybrakefuel-exhaustion andlate-terminalspeed/engineclustercontact failures remain.
+
+A5 SUPER HEAVY OCEAN DECK LANDING — VERIFIED IN FLIGHT 6 OCT 2026
+Evidence: work/starship-pack/evidence/2026-10-06-A5-drone-ship/landing-09/ and ballast500-continuous-support-01/.
+Existing one-part SpaceXDroneship uses finite 500 t ballast, stock buoyancy 1.2 and sine mode. Empty flotation passed 30.26 normal seconds. The actual 509.10 t booster stayed upright unpowered on the deck for 30.04 continuous normal seconds with all eleven parts, six extended locked legs, and an above-water level deck. This establishes this recorded load only.
+The successful approach used the recorded 20 km airborne native checkpoint, followed by 1.36 normal seconds of unpack; it did not reload near contact. Immediate precontact save reloads caused large bounce/tilt and failed. Saved time/resources were restored normally; no force, booster placement or refill.
+Programmatic throttle and MechJeb surface attitude used the full 33-engine cluster, actual horizontal correction and velocity braking, then near-upright slow descent. Six legs extended with 3 and locked with 4. First powered sample was at 13.305 km. Contact was about 4.05 m from deck centre: last airborne V -0.793/H 0.463 m/s, first native LANDED V -0.387/H 0.380 m/s, separated by 0.44 seconds. Exact collision speed was not sampled.
+After contact: throttle zero, main-engine shutdown, SmartASS OFF, SAS OFF, native RCS group OFF. Observe normal physics continuously; do not count hovering as support. Final booster V -0.00019/H 0.041 m/s, barge V -0.00274/H 0.010 m/s, deck 2.913 m above sea level, pitch 89.41 degrees. Accepted save A5_StableUnpoweredDeckSupport_2026_10_06_054613.sfs.
+No Booster Guidance, Landing Guidance or FMRS jump used. The complete immediate preparation-to-support branch had zero exceptions. Earlier failed retries remain recorded. This is an automated test-pilot procedure; human timing equivalents remain suggested, not flown. Separate Starship recovery and full sixteen-craft regressions remain pending at this checkpoint.
+
+A5 configuration follow-up — verified in game 2026-10-06 06:30: all sixteen current Tower Launch staging and cargo/arm/return-stow ground checks passed after candidate03. Eighty original images individually reviewed. No engine ignition or liftoff in these regressions; separate Starship ocean return remains pending. Evidence: work/starship-pack/evidence/2026-10-06-A5-drone-ship/regression-staging-02 and regression-cargo-02.
+
+A5 FRESH STARSHIP ORBIT — verified in flight 2026-10-06 06:47; evidence:work/starship-pack/evidence/2026-10-06-A5-drone-ship/starship-fresh-ascent-01. ExistingEmptyTowerLaunch, fullfuel/two crew. SmartASS due-east attitude/directprogrammatic throttle/staging, noAscentGuidance. Tower9/booster11 separated; all25carrierparts/two crew retained. Actual126.872x99.570km orbit stable60normal unpoweredseconds,55.268percentshipfuel. No saved-flight reload during this fresh launch; existingbarge nativefixture only restored beforepadlaunch. Earlier immediate separation-source reload lost one vacuumengine andfailed; preserved separately. Ocean return/landing stillpending. Native acceptedcheckpointA5_FreshStarshipOrbitStable_2026_10_06_064718.sfs.
+
+A5 Starship entry/brake — verified in actual flight 2026-10-06, evidence:work/starship-pack/evidence/2026-10-06-A5-drone-ship/starship-entry-02 and starship-braking-02. This is a tested sample, not a universal landing profile: after the disclosed earlier native pre-entry retry, existing precisionRCS settled bellyAoA75–105deg for3normal seconds with zero main thrust. Pause near35km (actual33.243km), selectHighRCS, six flight engines/action7, landing flap preset/action5 out of entry mode; command west70deg surface attitude. Actual first full six-engine thrust at28.181km; direct full throttle and westward braking retained25parts/two crew, then cut at8.408km/V-90.469/H92.327/10.379percent coremethane. Peakheat0.60028. Only the selected brake loop integrated1242.101m/s; it is not a complete mission deltaV budget. Deorbit targeting offset-.6deg is empirical.
+Starship deck landing is NOT verified:150m/s and70m/s upper descent profiles both exhausted reserve after several kilometres of lateral correction. Keep first lateflip and both reserve failures. Better fuel/attitude/lateral planning is needed; do not recommend these as a working Starship landing recipe. Methane percentages mean coreLqdMethane/max, not a measured combined propellant percentage. A recorded8.408km source copy with only the active saved RCS flag off produced EXC0 at normalunpack; original clock/orbit/resources/crew/parts were structurally identical and original source untouched. General reload safety is not established by this one case.
+
+A6 ORBITAL CLOSE APPROACH AND ROTATION SETTLING — verified in flight 6 OCT 2026
+Evidence: work/starship-pack/evidence/2026-10-06-A6-docking/rendezvous-guarded-01 and pair-settle-01.
+Actual Refuelling launcher deployed the existing14part fuel pod; a second actual Empty launcher carried Bob/Val and retained25parts. No orbital placement/refill/clock assignment. Use native MechJeb rendezvous to the pod with the existing six flight engines armed, desired range150m/maxclosing5m/s/max5phasingorbits. Normal native node warp is allowed in orbit. The development recorder kept an exactpart/orbit/crew and15real-second heartbeat guard; this is an automated test procedure, not a proven manual timing recipe.
+The accepted native rendezvous used plane correction, a230.5km phasing orbit and3.53phasingorbits, then an intercept and velocity correction. Exact planned node magnitudes are in telemetry; they are not integrated actual deltaV. Native RCS UI manualPID Kp.12/Ki0/Kd0/Tf1/100percent/SmartTranslationON/rotationOFF were temporary recorded native preferences, restored exactly/flushed after the run. Main engines were stopped and RCS disabled before settling. Own mode/cache production10b7f39e retained.
+Final actual root distance25.064m/relative speed0.868m/s, Pe98.773km/Ap131.736km, core methane6.815percent. Closest sampled14.317m has limited clearance; exact subframe contact/minimum was not measured, although all25+14parts survived. This does not satisfy a10second below.25m/s hold. Normal stock orbital unpack occurs at200m in this installation; the final approach/brake was late. Do not generalize this closepass as a generous safety margin.
+Before docking, use stock SAS StabilityAssist/reaction wheels with engines/RCSoff. Actual carrier angular speed<0.0015rad/s held11.14normal seconds over27.66normal seconds, allnative fuel/parts/crew retained. The outgoing pod moved from25.1 to45.7m atabout.87m/s. Then normal active-vessel switch to the unique pod name, explicitly pause because native switching can unpause, and verify its exact14parts/zero crew plus the intact25part/two-crew carrier. Physical stock docking/transfer/undock remain separate unproven tests until their recorded acceptance.
+
+
+A6 STOCK DOCKING / REFUELLING — VERIFIED IN FLIGHT ON 6 OCT 2026
+Evidence: work/starship-pack/evidence/2026-10-06-A6-docking/docking-04, docked-stability-01, docked-camera-01, transfer-undock-01.
+Use the actual compact Refuelling pod and Empty hull size1 Clamp-O-Tron ports. The current large Depot size2 ports do not match the hull size1 port. This test proves the existing compact pair can dock; it does not prove a full large-depot route.
+After orbital rendezvous, shut main engines down. Hold the carrier with stock SAS/reaction wheels until rotation stays below0.0015rad/s for at least10seconds. Switch to the deployed pod (normal switch can unpause: pause/check the active name and14parts). Control from its top docking port2694305267; select the carrier aft/belly stock port2135779492 as target. Enable stock pod RCS and native MechJeb Docking Autopilot, speed setting0.25m/s, automatic safe distance/target size, forcedroll off, defaultnativePID. Carrier guidance stalled laterally in previousattempts; moving the smallpod worked in this specific pair.
+Actualpod retry began with9.998486/50monopropellant and explicit3unitreserve; used3.640938. Guide backs out to a safe start and corrects lateral offset before inbound docking. The requested0.25speed setting did not bound every sampledclosing speed; actual nativeguide reachedabout1.29m/s earlier and slowednearcontact. Exactcontact speed is not independently sampled. Watch fuel, rotation, portalignment and clearance; stop before reserve exhaustion. Never add force/create a joint.
+Confirm both ports Docked and exact39parts/two crew after nativehandover. MechJeb can stop before both portstate snapshots finishmerging; wait briefly for native reciprocal Docked states. Originalscript immediateacceptanceguard failed; actual joint was preserved and verified separately. Turn controllers/engines/RCSoff; it remainedintact60normalseconds. No high-thruststrength test was done.
+Stocktransfer: select realpod methalox tank and Emptycore as destination. Existing source held2400methane/800oxidiser. Transfer each fuel normally; no in-flight refill/generatedfuel. The recorded stockAPI chunks1000+1000+400methane and800oxidiser gaveexact sourceLoss=coreGain and conservedtotal, leavingpodempty. These units are a smalltop-up, not a fullStarshiprefuel. Joint remained39/two for another60normalseconds.
+Use stockUndock atcarrierport. Activecarrier stayed25parts/two crew; independent depletedpod14parts. Only stockseparation force was used; unpoweredcoast60.960seconds grewrootdistance6.846725→15.088734m. Save the two independentvessels.
+Camera note: KSP may freeze a pausedcamera with HUDshown. A brief normal unpoweredframe update after changing camera showed the actualattachedpod/afthull. Never enhance/edit original pixels; qualify shadow/clipping/hoverhighlight/oldtrajectoryoverlays in captions.
+
+A6 quietjoint measurement:363native readbacks retained maxsampledfacegap0.342mm/opposingaxiserror0.0337deg. This supports the quiet-stockjoint check only; high-loadwobble/strength untested. Evidence:docked-stability-01/sampled-joint-geometry.json.
+
+A7 compact Rover ascent verified in flight on6Oct2026, evidence: work/starship-pack/evidence/2026-10-06-A7-mun/ascent-02. Same A6 due-east SmartASS/manual throttle-hold profile: full61pad/tower9release/52flight/booster11separation near41km then41ship, level due-east circularisation; actual126.132x99.306km/stable60normal seconds, fuel55.190percent/estimated5016.9m/s remaining. Planned empirical3780±150 versus sampledactual3781.55m/s thrust/mass integral, maxgap.52s. Normal sandbox HireApplicant recruited existing Liston/Tanley because oldfour wereAssigned toA6; no oldcrew reset. Stagedbooster discarded/destructednormallyonrails, no recovery. Muntransfer/landing/drive/return notyetflown.
+
+
+MUN FINAL DESCENT AND STANDING — verified in flight 2026-10-07; evidence: work/starship-pack/evidence/2026-10-06-A7-mun/mun-landing-05, mun-landing-settle-06, mun-landing-standing-07.
+Scope: fresh actual descent from explicitly replayed earlier recorded25km suborbital checkpoint, after original03 high-altitude horizontal brake; no new orbit placement. Existing3landing engines/native airless touchdown0.5m/s; extended locked legs. Before final descent set existing four stock-based leg PAW autoSpringDamper=False, springTweakable=2, damperTweakable=3 through ordinary native stock fields/events. Actual settings were read back. At contact set thrust zero and stop native landing guidance; retain stock SAS StabilityAssist/RCSoff. Expect small contact rebound; count standing only once nativeLANDED/low speed has settled. Uneven terrain may unload a fourth foot: record at least3grounded feet and positive approximate projected-COM footprint margin, alongside actual continuous landed/speed/part/crew guards. Accepted60.70normal seconds, minimum approximate margin1.771m, all41parts/two. Combined recorded early brake540.690+vertical322.531=863.221scalar m/s versus809.600original estimate; exact instantaneous impact speed not measured. Earlier failures and stricter recording guards retained; this does not verify rover drive, return or Duna settings.
+
+
+A7 COMPACT MUN ROVER RELEASE/DESCENT/DRIVE — 7 OCT 2026 LIVE CHECK
+Use the dedicated test save and D Starship 3 Rover (compact side-door family). Keep the carrier upright with settled terrain contact, stock SAS on, main/RCS off. Unlock2/open1, extend8 fully and allow arm/payload motion to settle, then release9. Own clean124d contact keeper restores only registered arm/collar collision ignores after stock collision reset; default ejection100percent released all25+16parts without the earlier kick. Switch to the independent rover, select flight engine7 and use existing MechJeb Land Somewhere/untargeted airless landing (tested native touchdown speed0.5m/s, gears on/chutes off/RCS adjustment off). No added hardware: existing Spark has6degree gimbal; native neutral COM/pivot balance needs3.758397degrees, exceeding its former3degree range.
+The recorded source was an explicitly replayed earlier actual41part ground checkpoint; earlier failures preserved. There was no extra replay between the accepted release06, descent03, drive01 and return-stow01. Descent actual28.288scalar m/s vs31.352empirical planned, all16parts retained/30.48normal rest. Last airborne recorded V-0.500/H0.227m/s; exact impact speed unavailable. Apply brakes/engine off after landing. Existing native Rover Controller1m/s/heading away from the carrier produced13.269642m displacement in24.42normal seconds, then10normal braking; engineDV0. Return to carrier,8retract→1close→2lock, retain native leg2/3/SASon/mainRCSoff;10.76normal support passed/all25parts/two crew. Mun ascent/Kerbinreturn still running/unproven. These settings were tested for the compact rover on this terrain, not the larger Expedition vehicle or Duna.
+
+7 OCT VERIFIED MUN ASCENT AND RETURN BURN — A7 CONTINUATION
+Verified in flight on7Oct2026; evidence:work/starship-pack/evidence/2026-10-06-A7-mun/mun-surface-ascent-01,mun-return-circularization-01,return-planning-bias-01,kerbin-return-node-03.
+Actual25part carrier surface ascent reached148.064x24.474km and held60.38normal seconds; planned726.483/actual888.085scalar m/s. The35km apoapsis target was overshot; this is not a circular35km ascent profile.
+Installed MechJeb native circularization atperiapsis used55.303planned/55.926actual m/s, reaching24.467x24.396km/ecc0.000157. Native MoonReturn requested60km predicted unsafeKerbinPe even fromthis circularorbit; guardstopped two proposals beforeignition. For this exact recordedorbit, paused native targetinput250km predicted50.375km, then262.375747km predicted59.941852km. This empiricalinputbias is not universal; inspect the native predictedpatch andreservebefore any burn.
+Native return burn264.351planned/264.762actual m/s thenproduced actualKerbinPe59.551817km. All25parts/Liston+Tanley retained; remainingmainprop170.185t. NativeSOI/coast/entry/landing are stillpending atthis checkpoint. Use actual resultingpatch checks; no orbit/fuel/clock setter was used. Earlier disclosed41part groundsource reload remains part of this mission provenance.
+
+7 OCT VERIFIED CONSERVATIVE KERBIN RETURN COAST — A7 RETRY
+Verified in flight on7Oct2026; evidence:work/starship-pack/evidence/2026-10-06-A7-mun/kerbin-return-entry-coast-02.
+Afterexplicitordinary recordedKerbinSOIsource reload01, pausebeforeheartbeat/ratechanges and slow nativewarp early. This case usedrateindex4 untiltimeToPe8000s,3 until3000s,2 until600s,1 until180s, then0; native actualmaximum100x (indices/rates readback matters). Below300km limitindex1, below180km index0. Requested250km setup stoppedat245.861km descending withall25parts/Liston+Tanley/0mainDV/EXC0. OrdinarynativeUT+18629.2s; no manualclock/orbit/resource assignment. Earlier170km coast overshootFAIL andunpowered solarheatguardFAIL remainpreserved. Pre-entry800m/s slowdown iscurrentlyrunning, notverifiedhere.
+
+Verified in flight on2026-10-07, evidence: work/starship-pack/evidence/2026-10-06-A7-mun/preentry-slowdown-01. On the explicitly disclosed saved KerbinSOI return retry, surface-retrograde alignment with high RCS then precision RCS/six native engines at35percent throttle achieved planned800/actual816.272scalar engine m/s. Native zero-throttle/zero-engine-thrust cutoff at177.422km;87.708t mainpropellant remains. This proves only slowdown; thermal entry/surface return and remaining fuel sufficiency are unproven. Approximate vacuumreserve1187.65m/s excludes future RCS/atmospheric losses. No thermal hardware/limits changed.
+
+Verified pre-entry burn only in flight on2026-10-07, evidence: work/starship-pack/evidence/2026-10-06-A7-mun/preentry-slowdown-02. After separately recorded entry02 solar heatguard failure, explicit native reload of actual cold245.861km preburn source restores earlier clock/fuel/temperature. Requested1300/actual1327.389scalar engine m/s using six native engines/35percent throttle/surface retrograde; native zero thrust cutoff155.446km/all25parts/two/47.334t mainpropellant. Approximate vacuumreserve691.222m/s is planningonly; entry and surface return stillunproven. Future late-braking profile suggested/not flown; thermalguard0.85 and all parttemperaturelimits unchanged.
+
+Verified thermal segment only in flight on2026-10-07, evidence:work/starship-pack/evidence/2026-10-06-A7-mun/kerbin-return-thermal-characterization-01. Following the recorded0.85 observer stop at28.752km, explicit1.03 observer characterization continued the same flight with stock temperature limits/cheats unchanged. Peak sampled0.948643; all25parts/Liston+Tanley survived to4.507km with no main burn. Dense-air attitude departed commanded perpendicular entry toward near retrograde; this is not a verified sustained belly hold. Surface landing remains unproven.
+
+A7 observed procedures — verified in flight on2026-10-07, evidence: /Users/denizuzel/Documents/Codex/Kerbal Space Program/work/starship-pack/evidence/2026-10-06-A7-mun
+Existing native manualleg2/3/auto-off supported actualMunstanding07 for60.700normal seconds, and after restoring the actualdriven-rover/carrier-stowed source the existing boundedpostreload contactsettle20/ready3/standing10 protocol passed10.660normal supportedseconds. This applies to recordedMun mass/gravity only. Actualdefault100percent roverrelease with clean124d latecontact-pair restoration/Spark gimbal6 descended intact and drove13.269642m; phases record exact native saves/impulse. Mun ascent888.085actual versus726.483planned; returnburn264.762302actual/264.351411planned reachedKerbinPe59.551817km. These are case evidence, not universalflight guarantees.
+Kerbinreturn procedure remains unverified for stablegroundstanding/usefulfuelreserve: freshrest15soft0.5/3 andrest16manual2/3 failedtwofoot unloading onactualabout5degree terrain, contact18 engines lacked usefulreserve. Do not call intactcontact a stablelanding/recovery. Preserve failures before trying any change. Full73legcomparison and source-replay separation: phase-summary-1913/leg-summary.csv.
+
+2026-10-07 CURRENT-HARDWARE HUBBLE REGRESSION LIMIT
+Actual Tower Launch ascent verified in flight:127.665×103.695km,60normal seconds stable,36upperparts/two crew,55.035percent shipfuel. Evidence:work/starship-pack/evidence/2026-10-06-A7-mun/clean-fix-flown-hubble-ascent-01.
+Release25+11 and automatic closedlocked stow retained all36partUIDs, but equipment deployment failed: one solar-panel module BROKEN. Both were RETRACTED through stow. Later payload SAS wasFalse and stock UI reported no operational SAS; a transient enabled flag is insufficient. Camera framing did not clearly show cargo or active telescope. This current-hardware deployment is NOT a verified working procedure. Failure evidence:clean-fix-flown-hubble-release-01 in the same folder. Root cause unisolated; later B2/B3 investigation must verify actual payload control, separation clearance and both healthy panels. Do not infer healthy equipment from intact part counts.
+
+
+A8 Surface Base ascent — verified in flight on2026-10-08; evidence: work/starship-pack/evidence/2026-10-08-A8-duna/base-ascent-01.
+Native full Tower Launch64parts/two Eldas-Virdin; SmartASS attitude with programmatic throttle hold/direct staging, no AscentGuidance. Liftoff after nine-part tower release55parts, observed TWR1.597109. Booster cutoffMET92.420/40.645km/1055.775m/s surface; native separationMET97.160/45.258km leaves44. Gradual due-east turn while pressure high; native observed max-Q29.145435kPa. Level due-east circularisation reaches122.973×94.478km;60normal unpowered seconds/all44/two living crew/cargo closedlocked, fuel54.892619percent. Remaining vacuum4828.912m/s is an estimate, not Duna mission acceptance. New tanker refuel/transfer/landing/base still pending.
+
+8OCT2026 VERIFIED ACTUAL A8 TANKER ORBIT, evidence work/starship-pack/evidence/2026-10-08-A8-duna/tanker-ascent-01 and tanker-ascent-continuation-01
+Refuelling59part Tower Launch/two new Eilgard-Crispont native crew, towerrelease50/booster separation39. Original strict telemetry freshness interruption6.382sec atMET78.260/27.468km, zero-throttle paused; sameflight continuation retained native clock/consumed fuel/GUID, no reload/refill. SmartASS attitude/direct staging/programmatic throttle hold. Final120.768×94.644km/60normal unpowered seconds/59.824722percent methane, EXC0WRN0 both phases. LiftoffTWR1.602088/observedpeakQ29.262954kPa/heat0.283905; remaining5178.860m/s vacuum estimate only. Fullnative229→218 exactoldBase11booster natural atmospheric destruction separately logged; allotherparts/crew retained. Newtanker booster not recovered. Duna mission/cargo/refuel pending.
+
+
+8OCT2026 A8 BASE RENDEZVOUS AND QUIET PREPARATION — verified in flight; docking still separate.
+Evidence: work/starship-pack/evidence/2026-10-08-A8-duna/base-rendezvous-01 and base-pod-docking-ready-01.
+Use the newly flown Base44/Eldas-Virdin and the full14part pod deployed by the newly flown tanker, not an older similarly named pod. Native MechJeb rendezvous and actual six-engine burns/normal warp reached191.585m root separation and0.203637m/s relative speed, Base120.841x94.682km. Current consumed fuel and native clock retained. This close approach did not prove a ten-second velocity hold or docking.
+Before pod guidance, stop Base main engines/RCS and use existing reaction-wheel native KillRot to damp rotation. Actual31normal seconds continuously below0.005rad/s passed, ending0.000104763rad/s. Ordinary exact native switch to the14part pod retained both craft; pause/check because native switching can change pause state. Selected Base belly size1 stock Clamp-O-Tron and pod front size1 stock Clamp-O-Tron were Ready/unshielded. Full native save confirms the pod has a reaction wheel and SAS; the shorter bridge module list omits them. Port readiness is native evidence; dark original photos do not resolve detailed port clearance.
+Separate original docking01 failed the0.3rad/s guard at0.3883rad/s during its first native turn; all parts/crew remained intact. The same-flight10percent native pod RCS trial is still unaccepted while it runs. Do not treat that trial as a verified docking setting or add/restore fuel. Stock joint/refuel/Duna flight remain separate required recorded tests.
+
+8 OCT — VERIFIED BASE REFUELLING IN THE ACTUAL A8 PARKING ORBIT
+The Base ship and new compact tanker pod rendezvoused through real engine burns. Use the external stock Clamp-O-Tron pair, not the larger port inside the Base bay. Native pod docking03 succeeded from the retained docking02 endpoint: temporary10% pod RCS for the far approach, original100% preferences restored before9.907m, then ordinary stock contact. The earlier spin and35-minute timeout attempts remain recorded. The settings are a tested procedure, not an isolated causal diagnosis.
+Keep the joined ship unpowered. The actual58-part/two-crew joint stood62.04normal seconds before transfer. Stock tank transfer from the pod into the Base core moved2400methane and800oxidizer; each source loss equalled its sink gain and combined totals stayed exact. It stood another60.52normal seconds, then stock Undock produced the original44-part Base and independent14-part depleted pod.60.82normal unpowered seconds increased root separation6.692to13.379m. No added separation force or fuel refill. This verifies this quiet compact joint; high-thrust joint strength and large-depot port compatibility remain untested.
+
+
+8 OCT 2026 — DUNA CARRIER CONTACT / SUPPORTED REST (DEVELOPMENT TEST)
+Verified in flight: work/starship-pack/evidence/2026-10-08-A8-duna/duna-terrain-aligned-native-retry-02 and duna-terrain-fresh-unassisted-standing-01.
+This is an explicitly declared native earlier-approach checkpoint retry; saved native time/fuel/temperature were restored separately, not an uninterrupted mission budget. Failed prior approaches and settling guards remain recorded.
+Existing native leg PAW: automatic off, spring3, damper3 on the current vessel only; legs extended/locked. ThreeSL engines and optional50 ordinary throttle/native vector attitude used actual full-travel terrain rays and gradual terminal terrain-normal alignment. Contact lastairV-0.360743/H0.243375mps with0.020s bracket; exactimpact unknown. Main native impulse82.012849m/s.
+After firstcontact guard interruptions, the same retry world reached quiet contact. Fresh60.319999normal seconds passed with nativeLANDED, main/thrust/SAS/RCS/SmartASSoff, at least3groundedlegs and positive approximate support margin. Minimum margin0.590570m uses full native suspension travel/measured terrain plane, not an exact stockcontact polygon. Full campaign identity/crew/resources auditPASS. Do not require fourfeet constantly or confuse the stricter82degree settling precondition with existing80degree strictrest criterion.
+Optional50 is development-only and is not a normal gameplay button. Ordinary MechJeb/manual reproduction of this final terrain-aligned profile is suggested, not flown as a separate normal-UI procedure. Independent19part base release/landing and optional return remain pending.
+
+8 OCT A8 INDEPENDENT BASE TEST CHECKPOINT (DEVELOPMENT ONLY)
+The actual current hardware base19 cleared the carrier using its existing Poodle and restored stockGear action, rose above220mradar and168.6m surface separation, then coasted to descendingV<-1/mainthrust0 before nativeMechJebLandUntargeted. Original -25mps speed and0.2radps transientrotation observer stops retained; sameworld continuation with predeclared airborne0.6radps bound reached actualLANDED, no newreplay/refill/hardware. Native lastprecontact sample is not exact impact speed. After initial2.50normal settling selected a nonpersistentquietsample, nextbounded12normal settling required6normal elapsed plus2normal observedquiet; actual8.06normal then60.019999normal strictstanding PASS under engine/RCS/SAS/SmartASSoff. Original80deg/0.025radps/0.5mps/3feet/0.1m measuredterrainapproxmargin bounds unchanged; actualminimum4feet/0.840457m/maxrotation0.00267929. Stock automatic baselegs unchanged. NativeAG0 deployed2healthyEXTENDEDsolarpanels; nightgeneration/long-term power unproven. Dedicated test save only, optionalhelper50 restricted development, cleannormal124d unchanged. These scripted nativeobserver controls are test evidence, not an added normalplay UI button. Carrier automaticstow/returnassessment next.
+
+8 OCT A8 REQUIRED MISSION ACCEPTED / OPTIONAL RETURN
+Carrier automatically completed arm retraction, nose closure and cargo lock after native stock base release. Both supported vessels then passed30.70additional normal seconds; all197missionUIDs/207nativeparts/15roster retained. Optional return was not flown: native3:1 methane/oxidizer mixture-limited381.065m/s above4percentreserve floors is below a stated approximate4086.091m/s budget (surface-to100km idealenergy1078.025 +400gravity/steering +608.066circularHohmannejection +2000entry/braking/landing). This is an estimate, not a validated return profile. Earlier carrierterminalcheckpoint retry restored savedclock/fuel/thermals and is separately logged; do not combine every failedbranchburn into an uninterrupted budget. Nativeparked save A8_ActualDunaBaseMissionParked_2026_10_08_074131.sfs; carrier25/Eldas-Virdin and independent19uncrewed base onDuna. RequiredmissionPASS; returnNOTATTEMPTED; long-duration powerunproven.
+
+8 OCT CURRENT TELESCOPE CONTROL QUALIFICATION
+Historical A2 stock-SAS response flag did not establish native ModuleSAS hardware. Current telescope has four native RCS blocks and MechJeb; actual two EXTENDED solar panels, RCS turn>5degrees and KILLROT damping<0.003rad/s for5normal seconds PASS. Precise SURFACE target tracking timed out and remains PARTIAL; stock SAS is unaccepted. Current release procedure in B3-operator-procedure.md; original failed source/PNG evidence retained.
