@@ -1,0 +1,79 @@
+ship = Drone Ship - Landing Practice
+version = 1.12.5
+description = One-part SpaceX-style landing barge with onboard control and power. Use VesselMover to place offshore. No engines; this is a stationary landing target.
+type = VAB
+size = 25,12.5,50.25
+steamPublishedFileId = 0
+persistentId = 3370200000
+rot = 0,0,0,0
+missionFlag = Squad/Flags/default
+vesselType = Ship
+OverrideDefault = False,False,False,False
+OverrideActionControl = 0,0,0,0
+OverrideAxisControl = 0,0,0,0
+OverrideGroupNames = ,,,
+PART
+{
+    part = SpaceXDroneship_3370200001
+    partName = Part
+    persistentId = 3370200001
+    pos = 0,14,0
+    attPos = 0,0,0
+    attPos0 = 0,14,0
+    rot = 0.707106829,0,0,0.707106829
+    attRot = 0.707106769,0,0,0.707106769
+    attRot0 = 0,0,0,1
+    mir = 1,1,1
+    symMethod = Radial
+    autostrutMode = Off
+    rigidAttachment = False
+    istg = -1
+    resPri = 0
+    dstg = 0
+    sidx = -1
+    sqor = -1
+    sepI = 0
+    attm = 0
+    sameVesselCollision = False
+    modCost = 0
+    modMass = 0
+    modSize = 0,0,0
+    attN = top,Null_0_0|0|-3.1892_0|0|-1_0|0|-3.1892_0|0|-1
+    attN = core,Null_0_0|24.146|-2.8111_0|0|-1_0|24.146|-2.8111_0|0|-1
+    attN = bottom01,Null_0_0|0|0_0|0|1_0|0|0_0|0|1
+    EVENTS
+    {
+    }
+    ACTIONS
+    {
+    }
+    PARTDATA
+    {
+    }
+    MODULE
+    {
+        name = ModuleCommand
+        isEnabled = True
+        minimumCrew = 0
+        hibernation = False
+        stagingEnabled = False
+    }
+    MODULE
+    {
+        name = ModuleGenerator
+        isEnabled = True
+        generatorIsActive = True
+        stagingEnabled = False
+    }
+    RESOURCE
+    {
+        name = ElectricCharge
+        amount = 100
+        maxAmount = 100
+        flowState = True
+        isTweakable = True
+        hideFlow = False
+        isVisible = True
+        flowMode = Both
+    }
+}

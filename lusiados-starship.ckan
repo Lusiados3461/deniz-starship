@@ -1,0 +1,82 @@
+{
+  "spec_version": "v1.6",
+  "identifier": "LusiadosStarship-ModList",
+  "name": "D Starship: required mods",
+  "abstract": "Installs every mod the D Starship fleet needs. Clamshell craft also need 6 Tundra Exploration 5.1.0 files; see docs/MANUAL.md section 3.4.",
+  "author": "Lusiados",
+  "version": "1.0",
+  "kind": "metapackage",
+  "ksp_version": "1.12.5",
+  "license": "MIT",
+  "resources": {
+    "repository": "https://github.com/Lusiados3461/lusiados-starship"
+  },
+  "depends": [
+    {
+      "name": "ModuleManager"
+    },
+    {
+      "name": "StarshipExpansionProject",
+      "version": "v.3.1.0"
+    },
+    {
+      "name": "StarshipLaunchExpansion",
+      "version": "1:Beta_v0.5"
+    },
+    {
+      "name": "B9PartSwitch"
+    },
+    {
+      "name": "Waterfall"
+    },
+    {
+      "name": "Shabby"
+    },
+    {
+      "name": "Resurfaced"
+    },
+    {
+      "name": "CommunityResourcePack"
+    },
+    {
+      "name": "CryoTanks"
+    },
+    {
+      "name": "StationPartsExpansionRedux"
+    },
+    {
+      "name": "SpaceDust"
+    },
+    {
+      "name": "KerbalJointReinforcementNext"
+    },
+    {
+      "name": "KSPCommunityFixes"
+    }
+  ],
+  "recommends": [
+    {
+      "name": "KerbalEngineerRedux"
+    },
+    {
+      "name": "MechJeb2"
+    },
+    {
+      "name": "Trajectories"
+    },
+    {
+      "name": "FMRS"
+    }
+  ],
+  "suggests": [
+    {
+      "name": "BoosterGuidance"
+    },
+    {
+      "name": "kOS"
+    },
+    {
+      "name": "SpaceXBargeLander"
+    }
+  ]
+}
